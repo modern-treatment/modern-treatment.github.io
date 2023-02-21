@@ -31,9 +31,7 @@ body {
 
 .search {
   font-size: 11px;
-  color: #101c36;
-  background-color: grey;
-  border-radius: 2px;
+  color: #cdcdcd;
   margin-bottom: 5px;
   max-width: 134px;
 }
