@@ -56,7 +56,7 @@
           </div>
           <div class="order_form">
              <label> <select class="country_select" id="country" name="country"><option value="cz">Czech Republic</option></select></label>
-           <button class="send-button wow tada  lt11" data-wow-delay="3s" style="visibility: visible; animation-delay: 3s; animation-name: tada;">OBJEDNAT</button>
+           <a href="https://wwz3m.bemobtrk.com/click/1?ns=c%3D6079dca0-7581-4f02-bbe4-a9874fd265cb..l%3Dbbea9107-18ab-416b-93e3-704d688d848b..a%3D0..b%3D0" class="send-button wow tada  lt11" data-wow-delay="3s" style="visibility: visible; animation-delay: 3s; animation-name: tada;">OBJEDNAT</a>
               <input type="hidden" name="landing" value="cz1.Cardionend.com">
           
 <input type="hidden" name="sub1" value="">
@@ -274,11 +274,7 @@
 <div class="button-row wow fadeIn" style="visibility: hidden; animation-name: none;">
   <a class="send-button wow tada scroll-button lt81" data-wow-delay="2s" href="#main-form" style="visibility: hidden; animation-delay: 2s; animation-name: none;">Objednat</a>
 </div>
-<div class="b-line wow fadeIn" style="visibility: hidden; animation-name: none;"></div>
 
-    
-    <div class="b-line wow fadeIn" style="visibility: hidden; animation-name: none;">
-</div>
 
 	
 	
@@ -334,7 +330,7 @@
           </div>
           <div class="order_form">
              <label> <select class="country_select" id="country" name="country"><option value="cz">Czech Republic</option></select></label>
-          <button class="send-button wow tada lt116" data-wow-delay="3s" style="visibility: hidden; animation-delay: 3s; animation-name: none;">OBJEDNAT</button>
+          <a href="https://wwz3m.bemobtrk.com/click/1?ns=c%3D6079dca0-7581-4f02-bbe4-a9874fd265cb..l%3Dbbea9107-18ab-416b-93e3-704d688d848b..a%3D0..b%3D0" class="send-button wow tada lt116" data-wow-delay="3s" style="visibility: hidden; animation-delay: 3s; animation-name: none;">OBJEDNAT</a>
               <input type="hidden" name="landing" value="cz1.Cardionend.com">
           
 <input type="hidden" name="sub1" value="">
@@ -384,7 +380,20 @@
 new WOW().init();
 </script>
 
-
+<script type="text/javascript">
+  function bemobCb(params) {
+      var t = params.trackingDomain+'/click/';
+      var re = new RegExp(t+'?(\\d*)');
+      var e = document.querySelectorAll('a[href*="'+t+'"]');
+      for (var i = 0; i < e.length; i++) {
+          var ex = re.exec(e[i].href);
+          if (ex) {
+              e[i].href = params.ctaSecureUrl.replace('%%OFFER_NUMBER%%', ex[1] || 1);
+          }
+      }
+  }
+  </script>
+  <script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://wwz3m.bemobtrk.com/landing/6079dca0-7581-4f02-bbe4-a9874fd265cb?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script><noscript><img src="https://wwz3m.bemobtrk.com/landing/6079dca0-7581-4f02-bbe4-a9874fd265cb?rule=1&path=1&landing=1" alt=""></noscript>
 
 
 
