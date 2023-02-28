@@ -1,0 +1,279 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 400;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.page-container__check {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #e7ecff;
+    background-image: url("img/thank-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.page-container__item {
+    display: none !important;
+}
+
+.page-container__item.visible {
+    display: flex !important;
+}
+
+.language {
+    padding: 15px;
+    background-color: #e7ecff;
+    min-height: 54px;
+}
+
+.language__container {
+    width: 100%;
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language__box {
+    position: relative;
+    width: 100%;
+    max-width: 80px;
+    padding: 0 10px;
+    z-index: 5;
+}
+
+.language__box_open {
+    position: absolute;
+    background: #fff;
+}
+
+.language__body {
+    position: relative;
+}
+
+.language__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+
+.language__item:hover {
+    background-color: #f2f2f2;
+}
+
+.language__item_hide {
+    display: none;
+}
+
+.language__item_active {
+    display: flex;
+}
+
+.language__item span {
+    flex: 1 0 auto;
+    color: #444;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.language__item img {
+    flex: 0 0 auto;
+    width: 24px;
+    margin-right: 5px;
+}
+
+.check {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.check__title {
+    color: #4A31E2;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: -2px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.check__description {
+    width: 100%;
+    padding: 30px;
+    background-color: #4A31E2;
+    box-shadow: 0px 10.7692px 11.8462px rgba(0, 10, 255, 0.25);
+    border-radius: 4.30769px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.check__container {
+    width: 100%;
+}
+
+.check__description p + p {
+    margin-top: 15px;
+}
+
+.check__body {
+    width: 100%;
+    position: relative;
+    padding: 15px 30px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 646px;
+    padding-right: 230px;
+}
+
+.check__media {
+    position: absolute;
+    bottom: -10px;
+    right: -8px;
+}
+
+.check__footer {
+    width: 100%;
+    background-color: #252525;
+    font-size: 9px;
+    color: #a9a9a9;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.check__footer span {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .check__media {
+        max-width: 200px;
+        right: 0;
+    }
+
+    .check__body {
+        padding-right: 175px;
+    }
+
+    .check__title {
+        font-size: 33px;
+    }
+
+    .check__description {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .check__title {
+        margin-bottom: 10px;
+        font-size: 27px;
+        text-align: center;
+        letter-spacing: 0;
+    }
+
+    .check__description {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .check__footer {
+        margin-top: 70px;
+    }
+
+    .check__footer span {
+        display: inline;
+    }
+
+    .check__body {
+        padding-top: 120px;
+        margin-top: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .check__media {
+        bottom: auto;
+        right: auto;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        max-width: 108px;
+    }
+
+    .check__footer {
+        font-size: 12px;
+    }
+}
