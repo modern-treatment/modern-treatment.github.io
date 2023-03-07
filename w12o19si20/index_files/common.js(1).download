@@ -1,0 +1,41 @@
+$(document).ready(function() {
+    var treeHours = new Date().getTime() + 10362000;    
+    $('#timer5').countdown(treeHours, function(event) {                
+        var hours = event.offset.hours;
+        var minutes = event.offset.minutes;
+        var seconds = event.offset.seconds;
+
+        var minutesPart1 = Math.floor(event.offset.minutes/10);
+        var minutesPart2 = event.offset.minutes%10;
+
+        var secondsPart1 = Math.floor(event.offset.seconds/10);
+        var secondsPart2 = event.offset.seconds%10; 
+
+        var $this = $(this).html(event.strftime(''   
+            + '<div class="number_block timer__days">' + 0 +  '</div>'       
+            + '<div class="number_block timer__hours">' + hours +  '</div>'
+            + '<div class="number_block timer__minutes">' + minutesPart1 + minutesPart2 + '</div>'
+            + '<div class="number_block timer__seconds">' + secondsPart1 + secondsPart2 + '</div>'));        
+    });
+
+    $('.modal_mouse_pop, .pop_close').on('click', function(){
+        $('.modal_mouse_out').hide()
+    });
+    $('.modal_mouse_pop').on('click',function(){
+        $('.modal_mouse_out').addClass('hide_forever')
+    });
+    $('.dn_popup-close').on('click',function(){
+        $('.modal_mouse_out').addClass('hide_forever')
+    })
+    
+    
+    $('body').mouseleave(function(e){
+        var $this = $(this);
+        var top = $this.offset().top;
+        if(e.pageY <= top) {
+            $('.modal_mouse_out').show();
+        }; 
+    });
+
+});
+

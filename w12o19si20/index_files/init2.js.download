@@ -1,0 +1,508 @@
+//document.write('<script type="text/javascript" src="http://hotdisk.org/js/jquery.simplemodal.1.4.2.min.js"></script>'); 
+
+
+//Инициализация встройки UPPOD член
+
+function video_payer_flash(id, url, st, autoplay, width, height){
+	var flashvars = {"comment":"","st": st, "file": url};
+	var params = {wmode:"transparent", allowScriptAccess:"always",id: id};
+	new swfobject.embedSWF("http://hotdisk.org/uppod.swf", id,  width, height, "9.0.115.0", false, flashvars, params);
+};
+
+function video_payer_html5(id, url, autoplay){
+			if(autoplay == 'true' || autoplay == 'autoplay'){
+				p = new Uppod({repeat: true, auto:"play", m:"video",uid: id, file: url, nohtml5: "Требуется HTML5"});
+			}else{
+				p = new Uppod({repeat: true, m:"video", uid: id, file: url, nohtml5:"Требуется HTML5"});
+			};
+};
+
+//Инициализация скидки
+
+$(document).ready(function(){
+	$('#discount_code').change(function(){
+		$.ajax({
+			dataType: 'script',
+			url: 'http://hotdisk.org/discount.php?code=' + encodeURIComponent($(this).val())
+		});
+	});
+	//Отключение Autocomplele у текстовых полей
+	$("input[type=text],input.text,input[type=tel]").each(function(k,v){ $(v).attr('autocomplete','off') });
+});
+
+$(document).ready(function(){
+	$('div.uppod').each(function(){
+		if($(this).attr('video') != ""){
+			flash_url = $(this).attr('video_flash');
+			//Если есть поддержка Flash,  и прописан URL видео которое поддерживает флеш-плеер
+			if (typeof flash_url !== 'undefined' && flash_url !== false && swfobject.hasFlashPlayerVersion("9.0.18")){
+				video_payer_flash($(this).attr('id'),  flash_url, $(this).attr('uppod_style'), $(this).attr('autoplay'), $(this).attr('width'), $(this).attr('height'));		
+			}else{
+			//Иначе HTML-5 плеер
+				video_payer_html5($(this).attr('id'),  $(this).attr('video'), $(this).attr('autoplay'));		
+			};
+		};
+	});
+	
+	//ADD LOADING GIF
+	if (document.location.pathname === '/' || document.location.pathname.indexOf('index') >-1 ) {
+		$('body').append('<div id="loading"><img class="loading-image" src="http://hotdisk.org/images/loading.gif" alt="Loading..." /></div>');
+	}
+});
+
+function system_info(){
+	res = "";
+	res = res + navigator.platform;
+	res = res + ";";
+	res = res + navigator.vendor;
+	res = res + ";";
+	lang = navigator.browserLanguage || navigator.language || navigator.userLanguage;
+	res = res + lang;
+	res = res + ";";
+	
+	w = screen.width || $(window).width();
+	h = screen.height || $(window).height();
+	cvet= screen.colorDepth?screen.colorDepth:screen.pixelDepth;	
+	res = res + w + 'x' +h + 'x' + cvet;
+	res = res + ";";
+	
+	pls = "Plugins:";
+	prev = "";
+	for(i=0;i<navigator.plugins.length;i++)
+	{
+		plugin = navigator.plugins[i];
+	    plugin = plugin.name+" "+(plugin.version || '');
+        if (prev == plugin ) continue;
+		pls = pls + plugin + "; ";
+        prev = plugin;
+    };
+	
+	res = res + pls;
+	return res;
+};
+
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+};
+
+
+function hotprice_rus2country(price){
+	country = hotprice_country();
+	if(country == "RUS"){
+		return price + ' ' + cur_name[country];
+	}
+	else{
+		return Math.round((parseFloat(price) * cur_kurs[country])) + ' ' + cur_name[country];
+	};	
+};
+
+function change_price_country(el, country){
+	if(el.html().indexOf("Бесплатно")==-1){
+	rur_price = el.next().val();
+	if(country == "RUS"){
+		el.html(rur_price + ' ' + cur_name[country]);
+	}
+	else{
+		el.html(Math.round((parseFloat(rur_price) * cur_kurs[country])) + ' ' + cur_name[country]);
+	};
+		
+	};
+};
+
+function hotprice_country(){
+	if($.cookie('hotprice_country') == null){
+		return $('#user_country').val();
+	}else{
+		return $.cookie('hotprice_country');
+	};
+};
+
+function hotprice_change_country(country_code){
+	$.cookie('hotprice_country', country_code);
+	$('.hotprice').each(function(){
+		change_price_country($(this), country_code);
+		$(this).next().next().html(hotprice_country_name(country_code));
+		$(this).next().next().next().find('option[value=' + country_code + ']').attr('selected', 'selected');
+	});
+	
+	//Пересчитываем стоимость в форме заказа
+		if($('#dostavka').length>0){
+			$('#hotprice_dostavka').val(hotprice_rus2country($('#dostavka').val()));
+			calculate_total_price();
+			$('select.country').each(function(){
+				$(this).find('option[value=' + hotprice_country() + ']').attr('selected', 'selected');
+			});
+		};
+
+		calculate_total_price();
+			
+	
+};
+//Выбор другой страны
+function clickChangeHotpriceCountry(el){
+	country_code = $(el).val();
+	
+	hotprice_change_country(country_code);
+	
+	$(el).prev().html(hotprice_country_name(country_code));
+	$(el).hide();
+	$(el).prev().show();	
+};
+
+//Нажатие на кнопку "Я из другой страны"
+function showHotpriceCountries(el){
+	$(el).hide();
+	$(el).next().show();
+//	$(el).next().next().show();	
+};
+
+function hotprice_country_name(country_code){
+	if(country_code == 'RUS'){
+		return '<img src="http://hotdisk.org/ru.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'UKR'){
+		return '<img src="http://hotdisk.org/ua.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'BLR'){
+		return '<img src="http://hotdisk.org/by.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'KAZ'){
+		return '<img src="http://hotdisk.org/kz.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'AZE'){
+		return '<img src="http://hotdisk.org/az.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'USA'){
+		return '<img src="http://hotdisk.org/us.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'KGZ'){
+		return '<img src="http://hotdisk.org/kg.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'GEO'){
+		return '<img src="http://hotdisk.org/ge.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'EST'){
+		return '<img src="http://hotdisk.org/ee.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'ARM'){
+		return '<img src="http://hotdisk.org/am.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+	if(country_code == 'MDA'){
+		return '<img src="http://hotdisk.org/md.png" style="vertical-align:middle;"/><img src="http://hotdisk.org/arrow.gif" style="vertical-align:middle;"/>'
+	};	
+};
+
+function init_hotprices(){
+	if(getUrlVars()["country"]){
+//		alert(getUrlVars()["country"]);
+		$.cookie('hotprice_country', getUrlVars()["country"]);
+	};
+	
+	$('.hotprice').each(function(){
+		s_countries = '<select style="display:none;" onChange="clickChangeHotpriceCountry(this);"><option value="RUS">Россия</option><option value="AZE">Азербайджан</option><option value="ARM">Армения</option><option value="BLR">Беларусь</option><option value="KAZ">Казахстан</option><option value="KGZ">Киргизия</option><option value="MDA">Молдова</option><option value="UKR">Украина</option><option value="GEO">Грузия</option><option value="EST">Эстония</option><option value="USA">Другая</option></select>';
+		if ($(this).is('.noflag')) {
+			$(this).after('<input type="hidden" value="' + parseFloat($(this).html()) + '"/><a class="hotprice_link" style="display: none;" href="#" onClick="showHotpriceCountries(this);return false;">' + hotprice_country_name(hotprice_country()) + '</a>' + s_countries);
+			$(this).next().next().next().find('option[value=' + hotprice_country() + ']').attr('selected', 'selected');
+		}
+		else{
+			if($(this).is('.flagonly'))
+			{
+				$(this).after('<input type="hidden" value="' + parseFloat($(this).html()) + '"/><a class="hotprice_link" href="#" onClick="showHotpriceCountries(this);return false;">' + hotprice_country_name(hotprice_country()) + '</a>' + s_countries);
+				$(this).next().next().next().find('option[value=' + hotprice_country() + ']').attr('selected', 'selected');						
+				$(this).hide();
+			}
+			else{
+				$(this).after('<input type="hidden" value="' + parseFloat($(this).html()) + '"/><a class="hotprice_link" href="#" onClick="showHotpriceCountries(this);return false;">' + hotprice_country_name(hotprice_country()) + '</a>' + s_countries);
+				$(this).next().next().next().find('option[value=' + hotprice_country() + ']').attr('selected', 'selected');						
+			};
+		};
+		change_price_country($(this), hotprice_country());
+	});
+	//Пересчитываем стоимость в форме заказа
+		if($('#dostavka').length>0){
+			$('#hotprice_dostavka').val(hotprice_rus2country($('#dostavka').val()));
+			calculate_total_price();
+			$('select.country').each(function(){
+				  $(this).find('option[value=' + hotprice_country() + ']').attr('selected', 'selected');
+			});
+		};
+	
+};
+
+function calculate_total_price_old(){
+		total = 0;
+		$('.product_count').each(function(){
+			if(!isNaN($(this).val())&&($("#product_check_"+$(this).attr('product_id')).attr('checked'))){
+				total = total + $(this).attr('product_price')*$(this).val();		
+			};
+		});	
+		$('#total_amount').val(total);
+		$('#total_amount_with_nds').val(Math.round(total + parseInt($('#dostavka').val())+ (total + parseInt($('#dostavka').val()))*parseInt($('#nds').val())/100));
+		//Считаем в валюте
+		el = $('select.country').find("option:selected");
+		if (el.val() == "") {
+			el = $('#curs_usa');
+		};
+		curs = el.attr('curs');
+		name2 = el.attr('name2');
+		$('#cur_text').html(name2);
+		$('#total_in_cur').val(Math.round(parseFloat(curs) * parseFloat($('#total_amount_with_nds').val())));
+		if(el.val()=="RUS"){
+			$('#cur_text').hide();			
+			$('#total_in_cur').hide();			
+		}
+		else{
+			$('#cur_text').show();		
+			$('#total_in_cur').show();
+		};
+};
+
+function get_discount(){
+	r = 0;
+	if($('#discount_percent').length > 0){
+		if(parseFloat($('#discount_percent').attr('percent')) > 0){
+			r = parseFloat($('#discount_percent').attr('percent'));
+		};
+	};
+	return r;
+};
+
+function calculate_total_price(){
+		total = 0;
+		$('.product_count').each(function(){
+			e = $("#product_check_"+$(this).attr('product_id'));
+			//alert(e.attr('type'));
+			//Если количество установлено и стаит галка или если скрытый товар
+			if(!isNaN($(this).val())&&(e.attr('checked') || (e.attr('type')=='hidden'))){
+				total = total + $(this).attr('product_price')*$(this).val();		
+			};
+		});	
+		$('#total_amount').val(hotprice_rus2country(total));
+		discount = Math.round(total*get_discount()/100);
+		if(discount == 0){
+			$('#discount_percent').val('Код не найден!');
+		}else{
+			$('#discount_percent').val(hotprice_rus2country(discount) + '(' + get_discount() + '%)');
+		};
+		$('#total_amount_with_nds').val(hotprice_rus2country(Math.round(total - discount + parseInt($('#dostavka').val())+ (total + parseInt($('#dostavka').val()))*parseInt($('#nds').val())/100)));
+		
+
+};
+ 
+
+$(document).ready(function(){
+
+	//Сохраняем инфу о браузере
+	$.cookie('system_info', system_info());
+	
+	//Кнопка получить скидки (показать доптовары)
+	$('a[onclick^="' + "$('#other_products')" +'"]').after("<br><center><a href=\"#\" onclick=\"$('#other_products').slideToggle(); return false;\"><img src='http://hotdisk.org/images/open-close.gif'/></a></center>");
+	
+	//Инициализируем клики по кнопкам
+	//$('.knopka').click(function(){
+	//	$.cookie('knopka', $(this).attr('knopka_name'));
+	//});
+	i=0;
+	$('a[href$="order.php"]').each(function(){
+		i++;
+		$(this).attr('knopka_name', 'Ссылка №' + i);
+		$(this).click(function(){
+			$.cookie('knopka', $(this).attr('knopka_name'));			
+		});
+	});
+	
+	//Разворачиваем доптовары если они есть в заказе
+	op = $('#other_products');
+	if(op.length > 0){
+		op.find('.product_count').each(function(){
+			if($(this).val()!=""){
+				op.show();
+			};
+		});
+	};
+	op = $('#more_products');
+	if(op.length > 0){
+		op.find('.product_count').each(function(){
+			if($(this).val()!=""){
+				op.show();
+			};
+		});
+	};
+	
+	
+	
+	//Проверка формы
+	$('form').submit(function(){
+		if($(this).attr('action') == "/order.php"){
+			total = 0;
+			$('.product_count').each(function(){
+				if(!isNaN($(this).val())&&($("#product_check_"+$(this).attr('product_id')).attr('checked'))){
+					total = total + $(this).attr('product_price')*$(this).val();		
+				};
+			});	
+			//total = Math.round(total + parseInt($('#dostavka').val())+ (total + parseInt($('#dostavka').val()))*parseInt($('#nds').val())/100)
+			if(total < min_order_amount){
+				alert('Минимальная сумма заказа: ' + hotprice_rus2country(min_order_amount));
+				return false;
+			};			
+		}else{
+			return true;
+		};
+	});
+	
+	$('.trunc_desc').truncate({max_length: 150, more: 'ещё...', less: 'скрыть'});
+	
+//	$('a[href^="mailto:"]').each(function(){
+//		$(this).attr('href', $(this).attr('href') + '?subject=' +  window.location.hostname)
+//	});
+	$('select.country').each(function(){
+		$(this).change(function(){
+			c = $(this).val();
+			if(c == ''){c='USA';};
+			hotprice_change_country(c);		
+		});
+	});
+//if ($($('.fancybox').fancybox).length) {
+	//$('.fancybox').fancybox();
+//}
+	$('.product_count').change(function(){
+		p_id= $(this).attr('product_id');
+		if(parseInt($(this).val())>0){
+			$('#product_check_' + p_id).attr('checked', 'checked');
+		}else{
+			$('#product_check_' + p_id).removeAttr('checked');			
+		};
+		calculate_total_price();
+	});
+	$('.product_check').each(function(){
+		$(this).click(function(){
+			c = $('#product_count_' + $(this).attr('product_id'));
+			if($(this).attr('checked')){
+				if(c.val()==""){
+				c.val(1);
+				};
+			}else{
+				c.val('');
+			};
+			calculate_total_price();
+		});
+	});
+	init_hotprices();
+	calculate_total_price();
+	// Prevent multiple form submit
+	//$('body').on('submit', 'form', function () {
+	//	$('input[type="submit"]', this).attr('disabled', 'disabled');
+	//	return true;
+	//});
+	$('body').on('submit', 'form', function () {
+	  $('body').addClass('loading');
+	  $(this).submit(function () {
+	      return false;
+	    });
+	  return true;
+	});
+	
+});
+
+$(function() {	
+	
+	if($.cookie("new_cookie")=="1"){
+		var cookie_keys = [ "age", "gender", "geo" ];
+		var cookies_data = {};
+
+		$.each(cookie_keys, function( index, cookie_key ) {
+		  if($.cookie(cookie_key)!=null){
+		  cookies_data[cookie_key] = $.cookie(cookie_key);
+		  }
+		});
+
+		if(!$.isEmptyObject(cookies_data)){
+		  $.ajax({
+		  type: "POST",
+		  url: "http://hotdisk.org/r.php",
+		  crossDomain: true,
+		  dataType: 'json',
+		  data: cookies_data,
+		  xhrFields: {
+			withCredentials: true
+		  }  
+		  });
+		}
+	  }
+	  
+	  $.ajax({
+		type: "POST",
+		url: "http://hotdisk.org/r.php",
+		crossDomain: true,
+		dataType: 'json',
+		xhrFields: {
+		  withCredentials: true
+		},
+		success: function(data){
+		  $.each(data, function( cookie_key, cookie_value ) {
+			if($.cookie(cookie_key)==null || $.cookie('new_cookie')=="2"){
+			  $.cookie(cookie_key, cookie_value);
+			}
+		  });
+		  if($.cookie('new_cookie')!="2"){
+			$.cookie("new_cookie", "2");
+		  }
+		}
+	});
+});
+
+$(document).ready(function(){	
+	//CALL BACK MOBILE
+	$('.call-open').click(function(){
+		$(this).hide();
+		$('.callback-full').fadeIn();
+	});
+	$('.call-close').click(function(){
+		$('.callback-full').hide();
+		$('.call-open').show();
+	});
+	
+
+	$('#cbh_phone').click(function(){
+		$(this).hide();
+		$('.cbh-mobile-body').removeClass('cbh-hide').addClass('cbh-show');
+	});
+	$('#cbh_mobile_close').click(function(){
+		$('.cbh-mobile-body').removeClass('cbh-show').addClass('cbh-hide');
+		$('#cbh_phone').show();
+	});
+
+	//MOLDOVA PHONE CODE
+	if($.cookie('hotprice_country') == 'MDA') {
+		$('input[name="telephone"]').each(function(){
+			if(!this.value){ $(this).val('+373'); };
+		});
+	}
+
+	var pramount = Math.round(total);
+	var oldpramount = Math.round(pramount*2);
+	$('.pramount').html(pramount * cur_kurs[country]  + ' ' + cur_name[country]);
+	$('.pramount').next('input').val(pramount);
+	$('.oldpramount').html(oldpramount * cur_kurs[country]  + ' ' + cur_name[country]);
+	$('.oldpramount').next('input').val(oldpramount);
+
+	var totamount = Math.round(total + parseInt($('#dostavka').val())+ (total + parseInt($('#dostavka').val()))*parseInt($('#nds').val())/100);
+	var oldtotamount = Math.round(totamount*2) ;
+	$('.totamount').html(totamount * cur_kurs[country]  + ' ' + cur_name[country]);
+	$('.totamount').next('input').val(totamount);
+	$('.oldtotamount').html(oldtotamount * cur_kurs[country]  + ' ' + cur_name[country]);
+	$('.oldtotamount').next('input').val(oldtotamount);
+	$('select.country').change();
+	
+	$('.confident-link').click(function(){$('.hidden-conf').fadeIn();if($(window).height() < 760){$('.conf-info').css({'height':  ($(window).height()-120),'overflow-y': 'scroll'});};});
+	$('.close-conf').click(function(){$('.hidden-conf').fadeOut();});
+});

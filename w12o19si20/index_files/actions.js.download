@@ -1,0 +1,64 @@
+/*jquery placeholder*/
+!function(t){function e(e){this.input=e,"password"==e.attr("type")&&this.handlePassword(),t(e[0].form).submit(function(){e.hasClass("placeholder")&&e[0].value==e.attr("placeholder")&&(e[0].value="")})}e.prototype={show:function(t){if(""===this.input[0].value||t&&this.valueIsPlaceholder()){if(this.isPassword)try{this.input[0].setAttribute("type","text")}catch(e){this.input.before(this.fakePassword.show()).hide()}this.input.addClass("placeholder"),this.input[0].value=this.input.attr("placeholder")}},hide:function(){if(this.valueIsPlaceholder()&&this.input.hasClass("placeholder")&&(this.input.removeClass("placeholder"),this.input[0].value="",this.isPassword)){try{this.input[0].setAttribute("type","password")}catch(t){}this.input.show(),this.input[0].focus()}},valueIsPlaceholder:function(){return this.input[0].value==this.input.attr("placeholder")},handlePassword:function(){var e=this.input;if(e.attr("realType","password"),this.isPassword=!0,t.browser.msie&&e[0].outerHTML){var s=t(e[0].outerHTML.replace(/type=(['"])?password\1/gi,"type=$1text$1"));this.fakePassword=s.val(e.attr("placeholder")).addClass("placeholder").focus(function(){e.trigger("focus"),t(this).hide()}),t(e[0].form).submit(function(){s.remove(),e.show()})}}};var s=!!("placeholder"in document.createElement("input"));t.fn.placeholder=function(){return s?this:this.each(function(){var s=t(this),i=new e(s);i.show(!0),s.focus(function(){i.hide()}),s.blur(function(){i.show(!1)}),t.browser.msie&&(t(window).load(function(){s.val()&&s.removeClass("placeholder"),i.show(!0)}),s.focus(function(){if(""==this.value){var t=this.createTextRange();t.collapse(!0),t.moveStart("character",0),t.select()}}))})}}(jQuery);
+/*jquery placeholder end*/
+
+/*back to top*/
+function toTop() {
+	jQuery('.back-to-top').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({scrollTop: 0}, 500);
+		return false;
+	})
+}
+/*back to top end*/
+
+/*post img*/
+function postImg() {
+	if(!$('.delivery-post').length){return;}
+	$('select.country').on('change', function () {
+		var checkedValue = $(this).val();
+		$('.delivery-post').attr('id', checkedValue + '-post-img');
+		if(checkedValue == "GEO"){
+			$('.delivery-label').html('Доставка по всей Грузии');
+		} else if (checkedValue == "ISR"){
+			$('.delivery-label').html('Доставка по всему Израилю');
+		} else if (checkedValue == "LVA"){
+			$('.delivery-label').html('Доставка');
+		} else if (checkedValue == "LTU"){
+			$('.delivery-label').html('Доставка');
+		} else if (checkedValue == "BLR"){
+			$('.delivery-label').html('Доставка почтой');
+		} else if (checkedValue == ""){
+			$('.delivery-label').html('Доставка по всему миру');
+		} else {
+			$('.delivery-label').html('Доставка почтой или курьером');
+		}
+	});
+	$('select.country').trigger('change');
+}
+/*post img end*/
+
+function showMessage() {
+		setTimeout(function(){$('.message1').fadeIn();}, 7000);
+		setTimeout(function(){$('.message1').fadeOut();}, 15000);
+		setTimeout(function(){$('.message2').fadeIn();}, 25000);
+		setTimeout(function(){$('.message2').fadeOut();}, 40000);
+		$('.close-msg').click(function(){ $('#pop-messages li').fadeOut(); });
+};
+
+/**placeholder init*/
+function placeholderInit(){
+	var formOrder = $('.hotorder-form');
+	formOrder.find('input[name*="telephone"]').attr("placeholder", "Телефон").placeholder();
+	formOrder.find('input[name*="name"]').attr("placeholder", "Имя").placeholder();
+}
+/**placeholder init end*/
+
+
+/** ready **/
+$(document).ready(function(){
+	toTop();
+	postImg();
+	placeholderInit();
+	showMessage();
+});
