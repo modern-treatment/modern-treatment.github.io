@@ -1,198 +1,263 @@
 var new_lang = {
-lt1:    ' OneTwoSlim — elimina il grasso in eccesso dai fianchi senza dover ricorrere ad un’operazione',
-lt2:    'OneTwoSlim',
-lt3:    'Salute con OneTwoSlim',
-lt4:    'Effetto',
-lt5:    'Come funziona',
-lt6:    'Risultati delle ricerche',
-lt7:    'Recensioni',
-lt8:    'Posologia',
-lt9:    'Ordinare con lo sconto',
-lt10:   'Raccomandato<br>dai dottori',
-lt11:   'Testato<br>clinicamente',
-lt12:   '100%<br>naturale',
-lt13:   '',
-lt14:   'Eliminazione senza operazione<br>del grasso dalla pancia e dai fianchi <span class="backGreen textWhite">in 21 giorni!</span>',
-lt15:   'Elimana il pericoloso grasso «interno» dal corpo',
-lt16:   'Elimina la quantità di grasso sottocutaneo',
-lt17:   'Ottimizza l’assimilazione delle sostanze utili',
-lt18:   'Blocca l’assimilazione dei carboidrati rapidi',
-lt19:   'Elimina le tossine, pulisce l’organismo',
-lt20:   'Diminuisce l’appetito',
-lt21:   'Sconto',
-lt22:   'Ordina ora',
-lt23:   'Ordinare con lo sconto',
-lt24:   'Salute con OneTwoSlim',
-lt25:   'Il grasso sui fianchi e sulla pancia — non è solo un problema estetico, è un vero <span class="borderGreen bold borderGreenGo">pericolo per la vostra salute!</span> Nella zona della pancia sono collocati i principali orgni interni: gli organi riproduttivi, fegato, reni, intestini – e tutti loro hanno bisogno di difese. Per questo esiste uno strato protettivo, che si forma attingendo <span class="borderGreen bold borderGreenGo">alle cellule grasse.</span> E quando la pancia aumenta queste <span class="borderGreen bold borderGreenGo">cellule senza controllo</span> <span class="borderGreen bold borderGreenGo">aumentano</span> e iniziano a fare pressione sulle valvole, chiudono i linfonodi e danno problemi di cricolazione, доступ si hanno problemi di assimilazione in tutti gli organi, e questo può comportare <span class="borderGreen bold borderGreenGo">malattie e problemi seri.</span>',
-lt26:   'OneTwoSlim <span class="borderGreen bold borderGreenGo">attiva i processi</span><br><span class="borderGreen bold borderGreenGo">di assimilazione dell’organismo,</span> e come risuultato <span class="borderGreen bold borderGreenGo">il grasso in eccesso che viene dal cibo</span> <span class="borderGreen bold borderGreenGo">viene eliminato,</span> senza riuscire a lasciar segno. Quindi l’organismo inzia senza problemi a lavorare «le riserve non pericolose» — all’inizio <span class="borderGreen bold borderGreenGo">il grasso interno,</span> che si deposita negli organi,  poi quello sotto pelle.',
-lt27:   'Senza limitazioni nell’alimentazione',
-lt28:   'Senza carichi sportivi',
-lt29:   'Senza effetti collaterali',
-lt30:   'Innocuo e salutare per l’organismo',
-lt31:   'Senza componenti chimici per bruciare il grasso',
-lt32:   'Effetto liposutivo ',
-lt33:   ' L-carnitin ',
-lt34:   ' Velocizza il metabolismo e attiva il processo di combustione del tessuti grassi e di assimilazione dei componenti energetici и, previene la formazione di nuovi depositi di grasso.  <span class="borderGreen borderGreenGo">rifornisce le cellule di ossigeno </span> e <span class="borderGreen borderGreenGo"> aumenta in maniera visiva la produttività. </span>', 
-lt35:   ' Ibis ',
-lt36:   ' Contiene una grande quantità di cromo e acido ascorbico, e anche acido idroglicemico. <span class="borderGreen borderGreenGo">Di ben 4 volte</span> <span class="borderGreen borderGreenGo"> velocizza la digestione, </span> ha leggeri componenti lassativi e diuretici,che ripuliscono completamente l’organismo dalle tossine ',
-lt37:   ' TE VERDE ',
-lt38:   ' Contiene popifenolo, <span class="borderGreen borderGreenGo"> che facilita il lavoro del metabolismo a caldo </span> grazie all’utilizzo dei grassi in eccesso. <span class="borderGreen borderGreenGo"> Abbassa il livello di zuccheri nel sangue, </span> <span class="borderGreen borderGreenGo"> elimina il senso di appetito. </span> Elimina i liquidi in eccesso dall’organismo risolvendo i problemi di ritenzione idrica. ',
-lt39:   'In più ',
-lt40:   ' Garcinia della Cambogia ',
-lt41:   ' Bacche di Gogi ',
-lt42:   ' Guarana e zinco ',
-lt43:   ' Indispensabili per avere una vita piena di attività, concentrazione e antezione ai particolari, infatti il calo di forze aumenta l’appetito in maniera esponenziale, ed è la maggior causa di depositi di grasso nell’organismo ',
-lt44:   '',
-lt45:   'Come funziona OneTwoSlim?',
-lt46:   '1-14 giorni',
-lt47:   'Si scioglie e viene espulso dall’organismo il grasso interno pericoloso, che si accumula negli organi interni',
-lt48:   '14-21 giorni',
-lt49:   'Lo stesso processo avviene per i grassi sottocutanei, si ristabilisce l’equikibrio lipidico, la pancia si assottiglia in maniera visibile',
-lt50:   '21 giorni e oltre',
-lt51:   'Si bruciano gli accumuli sui fianchi, la pelle si stira, scompagliono le pieghe sulla pncia e i segni di cellulite',
-lt52:   'Risultati dei test clinici',
-lt53:   'Nel febbraio 2016 al Centro Nazionale dell’Alimentazione пsono stati effettuti dei test clinici sull’utilizzo di OneTwoSlim',
-lt54:   '<span class="bold textSmall">gruppo:</span> 300 persone di diverso peso e ceto sociale <span class="textGreen textBig hidden-xs">/</span>',
-lt55:   '<span class="bold textSmall">livello di assunzione:</span> 21 giorni come da libretto illustrativo',
-lt56:   'Possiamo affermare dopo una lunga serie di test clinici che OneTwoSlim non ha effetti negativi sullo stomaco, il sistema digestivo e i suoi organi. Grazie a questo preparato potrete facilmente liberarvi del grasso in eccesso sui fianchi.',
-lt57:   'Michele Lattanzi',
-lt58:   'Dietologo',
-lt59:   'Risultati comuni',
-lt60:   'Miglioramento della salute generale',
-lt61:   'Scomparsa totale di qualsivoglia tipo di dolore allo stomaco',
-lt62:   'Scomparsa del grasso viscerale (interno)',
-lt63:   'Diminuzione di grasso sottocutaneo e cellulite',
-lt64:   'Diminuzione del volume della pancia',
-lt65:   'Dei pazienti',
-lt66:   'Di 5-7 см',
-lt67:   '',
-lt68:   'Di 8-10 см',
-lt69:   '',
-lt70:   'Di 11+ см',
-lt71:   '',
-lt72:   'Diminuzione del peso',
-lt73:   'Di 6-10 кg',
-lt74:   'Di 11-15 кg',
-lt75:   'Di 16+ кg',
-lt76:   'Pazienti femminili',
-lt77:   'Anna',
-lt78:   '-11 см',
-lt79:   '-8 kg',
-lt80:   '32 anni, casalinga, mamma di due bamini',
-lt81:   'Mi sembra di non essere mai stata così bella, neanche prima della  <span>gravidanza!</span>',
-lt82:   'Leggere la storia del dimagrimento',
-lt83:   'Alessandra',
-lt84:   '-15 см',
-lt85:   '-12 kg',
-lt86:   '41 anni, professoressa universitaria',
-lt87:   'La mia nuova silhouette  — è l’orgoglio di mia figlia, l’invidia delle mie amiche e un’incredibile sicurezza in sé stessa e sete <span>di vita!</span>',
-lt88:   '',
-lt89:   'Franco Pizza',
-lt90:   '-13 см',
-lt91:   '-10 кg',
-lt92:   '64 anni, funzionario in pensione',
-lt93:   'Ho iniziato a sentirmi meglio, non ho più alito cattivo e la pancia non mi da più  <span>problemi</span>',
-lt94:   '',
-lt95:   '',
-lt96:   'Recensioni',
-lt97:   'Enrica, 26 anni',
-lt98:   'Non solo ho perso 8 см di pancia, ma mi sono anche liberata dell’ulcera continua che avevo!',
-lt99:   'Solitamente tutti i prodotti dimagranti provocano danni allo stomaco e più in generale a tutto il sistema digestivo, ma <span class="borderGreen borderGreenGo">с OneTwoSlim</span> <span class="borderGreen borderGreenGo">agisce in tutt’altro modo!</span> grazie a lui non solo  <span class="borderGreen borderGreenGo">ho eliminato 8 см di piancia,</spanma mi sono anche liberata dell’ulcera! Tutto è risulato <span class="borderGreen borderGreenGo">più semplic della semplicità stessa,</span> non ho neanche dovuto rinunciare ai dolci!',
-lt100:  'Vittoria, 37 anni',
-lt101:  'Già dopo un mese di assunzione di questo prodotto magico ho due bei fianchi fini e la pancia piatta!',
-lt102:  'Quando sei circondata da malate d’allenamento,e sport e palestra non fanno per te, diventa tutto triste. Quando il dottore ti fa notare che  <span class="borderGreen borderGreenGo">la tua pancia sembra un cuscino,</span> e questo non è un bene per la salute, <span class="borderGreen borderGreenGo">diventa tutto molto pauroso.</span> Quando poi via internet ti imbatti nel sito del produttore di OneTwoSlim, compare la speranza. E già <span class="borderGreen borderGreenGo">чdopo un mesa</span> di assunzione di questo prodotto miracoloso <span class="borderGreen borderGreenGo">ecco due bei fianchi</span> <span class="borderGreen borderGreenGo">e la pancia piatta!</span> Non avrei mai pensato che ad un problema così grande potesse esseri una <span class="borderGreen borderGreenGo">soluzione così semplice!</span>',
-lt103:  'Marina 55 anni',
-lt104:  'Ora ho una silhouette come se avessi tredici anni, nell’invidia delle mie amiche!',
-lt105:  'Si, perfino alla mia età <span class="borderGreen borderGreenGo">si vuole essere in forma</span> <span class="borderGreen borderGreenGo">e attraente!</span> Per questo quando mia figlia mi ha portato questo prodotto dopo un viaggio all’estero ho iniziato a prenderlo senza pensarci due volte. Al suo interno non ci sono componenti dannosi, non c’è alcun componente chimico, al <span class="borderGreen borderGreenGo">100% componenti naturali</span> <span class="borderGreen borderGreenGo">più vitamine.</span> Ecco, dopo aver iniziato a prendere questo prodotto <span class="borderGreen borderGreenGo">la pancia è diminuita</span> <span class="borderGreen borderGreenGo">di ben 13 centimetri,</span>la pelle è in salute e mi sento bene! E tutto questo in meno di un mese! Ora ho una <span class="borderGreen borderGreenGo">silhouette</span> <span class="borderGreen borderGreenGo">come se avessi 13 anni,</span> e le amiche mi invidiano!',
-lt106:  'Caterina 31 anni',
-lt107:  'Ho fatto due cicli in tre settimane, e ora la mia pancia è piatta come quelle delle pubblicità dei prodotti dimagranti',
-lt108:  'Con la mia silhouette dimagrire è sempre stato rischioso: Ho le gambe di mio molto magre mentre <span class="borderGreen borderGreenGo">la pancia è importante!</span> e se  ti metti a dieta dimagriscono prima le gambe , poi il seno, e solo dopo si arriva alla pancia,! OneTwoSlim è diventato la mia salvezza! Agisce con forza proprio sul grasso della pancia. In più <span class="borderGreen borderGreenGo">ha effetto rapidamente.</span> Ho eseguito <span class="borderGreen borderGreenGo">due cicli di tre settimane,</span> e la mia pancia ora <span class="borderGreen borderGreenGo">è piatta</span> <span class="borderGreen borderGreenGo">come nelle foto delle pubblicità!</span>già diverse mie amiche <span class="borderGreen borderGreenGo">hanno iniziato </span> <span class="borderGreen borderGreenGo">a prendere OneTwoSlim,</span>entusiasmate dal mio esempio.',
-lt109:  'Affrettati ad ordinarlo con uno sconto del 50%',
-lt110:  'Raccomandato<br>dai dottori</span>',
-lt111:  'Testato<br>clinicamente</span>',
-lt112:  '100%<br>naturale</span>',
-lt113:  'Siete pronti ad iniziare a dimagrire',
-lt114:  'Già oggi!',
-lt115:  'Si certo!',
-lt116:  'No',
-lt117:  'Anna',
-lt118:  '32 anni, casalinga, mamma di due bambini',
-lt119:  '-11 см sui fianchi',
-lt120:  '-8 кg di peso',
-lt121:  'Giorno',
-lt122:  'Visto che devo fare un diario per il bene della scienza, oggi scrivo una rapida introduzione su come sono capitata in questo programma. Non sono grassa e non lo sono mai stata. Ma ho una caratteristica nella mia silhouette che dopo due gravidanze è diventata molto grottesca e pronunciata: la parte superiore del corpo (pancia e seno) molto più robusta delle gambe. Mia madre ha lo stesso tipo di silhouette, è ereditaria. Ed ecco che dopo il secondo parto sono dimagrita improvvisamente, ma non ovunque: mi è restata una pancia enorme con la pelle tutta moscia. Ancora così giovane e sembravo una palla gonfiata con i piedi, sapete quelle donne che non si capisce quanti anni hanno? Sono diventata una di loro.',
-lt123:  'Ma passiamo agli affari seri: mi hanno dato delle bottigliette, che secondo coloro che le hanno realizzate, mi fanno dei fianchi che non li avevo neanche prima della gravidanza. Non ci credo ma vale la pena provare! Le ho prese la mattina prima di fare colazione,e nella stessa quantità dopo la colazione. Adesso prima di cena con un bicchiere d’acqua, e sarà necessario anche dpo il pasto. Avevo paura che il sapore fosse  atroce ma no,una volt ain acqua si beve come se non ci fosse, totalmente insapore.',
-lt124:  'Certo prendere questo preparato non mi disturba, ma per ora l’effetto è pari a 0. Meno male che me lo hanno dato gratis.',
-lt125:  'Non so se è il preparato o l’effeto placebo, ma mi sento molto più attiva,dormo e lavoro meglio .',
-lt126:  'La mia pancia non è tremenda, ma ora so per certo che non è l’effetto placebo, perché è diminuita di un centimetro. E’ solo una goccia nel mare, ma già un buon risultato!',
-lt127:  'Mi hanno chiesto di pesarmi e misurarmi oni 7 giorni per riportare i risultati in questo diario.  Non ho resistito quindi già ieri ho misurato la pancia, ma tuttavia l’ho rimisurata oggi per non venir meno alle regole. eeeeee! Pancia, meno 1 см, peso, meno 3 кg. Vai così! Se continua così… beh non mi voglio portare sfortuna!',
-lt128:  'OneTwoSlim lo prendo per aumentare l’efficacia, ne vvorrei prendere ancora di più ma dicono che non si può :))) Sento l’effetto delle vitamine “ENERGY”: attiva, dormo bene,faccio in tempo anche a giocare con i piccoli, e mettere in ordine, e anche un po’ a lavorare (faccio saponi in casa che vendo nel mio gruppo su facebook). Non mi misuro più prima del tempo per poi stupirmi ogni volta! Beh, ovviamente però ogni volta spero di perdere non uno, ma beicentimetri:)))',
-lt129:  'a proposito, pensavo, chissà come avrà effeto se in più faccio almeno 30 addominali al giorno e mangio meno! anche se è difficile pensare che si possa avere un effetto migliore! Ma per prima cosa sono pigra, per seconda secondo le regole dell’esperimento bisogna continuare a condurre la vita di tutti i giorni. Se tutto va bene quando finiscie tutto farò un ciclo per conto mio, aggiungendo dita ed esercizi.',
-lt130:  'Traguardo prefissato. tadaaaaan!fianchi ancora meno 3,5 (quindi già meno 5), peso meno 4,5 dalla volta scorsa. Sinceramente sono un po’ delusa, pensavo di perdere di più… ma va bene così… manca ancora una settimana…',
-lt131:  'Mi sono accorta che non ho più dolori di pancia e mi è scomparsa l’ulcera. Qualsiasi cosa mangio, no problem!a proposito, 5 см sui fianchi sembra poco, ma i vestiti mi penzolano. Se mi metto i soliti jeans sembro un sacco di patate:))) E’ brutto da vedere ma mi fa un gran piacere.',
-lt132:  'Mio figlio più grande oggi ha detto: “mammа sei così felice, rii tutto il tempo, vorrei che tu fossi sempre così”. Io non me ne sono neanche accorta. Beh mi sento veramente più riposata e leggera. Beh e i capricci del piccolo non mi disturbano neanche più tanto.',
-lt133:  'Mi sembra di esser edimagrita ancora, e non di poco. Ma resisto e ancora non mi peso mancano 3 giorni. Neanche prima di essere incinta mi sentivo così bella! A proposito! La cellulite! Ce l’ho da quando avevo 16 anni, manco ci stavo più a pensare. E oggi mi sono girata davanti allo specchio: non dico che è scomparsa, ma è molto meno, come dopo un ciclo di massaggi anticellulite (e un ciclo del genere costa sui 150 euro, il più economico). Un bonus piacevole ed inaspettato.',
-lt134:  'domani è il giorno X! Ma posso fare delle considerazioni già ora. 1) Non mi pento mininamente di aver accettato di sperimentare questo prodotto; 2) Mi sento una bomba, setivo gli effetti sull’organismo dopo meno di una settimana; 3) Non importa quanto ho perso in questo settimana (аe domani già lo scopriamo), ma ho un gran bel figurino, se ne è accorto mio marito (ebbene si, ricomincia a flirtare!); 4) E’ diminuita vistosamente la cellulite, e non solo sulla pancia, ma su fianchi e glutei anche. Domani attendiamo i risultati finali.',
-lt135:  'In-cre-di-bi-le! Fianchi, ancora meno 6, quindi in totale 11 centimetri in meno!!! ora alla vita misuro 71 cm!!!Avevo un abcino del genere solo a scuola!!! Non ci posso credere, l’ho misurata tre volte!!! sono felice! Mi sentite? FELICE! E il peso, ancora meno 4 кg.Ma per me il peso non conta, conta l’aspetto fisico. E va una bomba! Ecco il mio risultato finale: in 21 giorni di assunzione di “OneTwoSlim” sono dimagrita 11,5 kg e ora peso 64,5. i fianchi sono diminuiti di 11 cm(sisi, undici!!!) e la vita ora misura 71 см.',
-lt136:  'P.S.',
-lt137:  'Sono molto felice di aver partecipato a questa ricerca e il risultato parla da se. Ho comprato dei jeans taglia 44,è un piacere unico! E non ho più bisogno di abbinarci una canottiera larga per coprire i “rotoli dell’amore” che pendevano sulla cintura, posso perfino mettermi in top! Grazie, Grazie e ancora grazie!!!',
-lt138:  'Valerio Pozzo',
-lt139:  '64 anni, funzionario in pensione',
-lt140:  '-13 см ai fianchi',
-lt141:  '-10 кg di peso',
-lt142:  'Mi sono iscritto a questo esperimento per far contenti i bambini. Ho studiato attentamente ogni dettaglio. I componenti del preparato sono naturali, di cose chimiche non ne avrei prese neanche a suon di quattrini. Hanno detto che non ci sono controindicazioni,avevo paura dato che ho la gastrite, problemi di stomaco e altre schifezze. Va preso mattina e sera prima e dopo i pasti. Non credo molto al risultato, ma se aiuta almeno un po’, mi va bene. Che gli scherzi su i funzionari e pancia da generale, non sono scherzi.',
-lt143:  'Prendo il preparato come da regola, ma è presto per dare giudizi. Ma dato che va scritto, lo srivo.',
-lt144:	'Già da un paio di giorni non ho doloti allo stomaco, si è stabilizzata la digestione. Penso sia per via del preparato, sarò felice se l’effetto non svanirà.',
-lt145:  'Ogni settimana peso e misura. Peso, 94 кg, 4 se ne sono andati, senza che me ne accorgessi. Pancia, 130 см.e anche qui meno 4. Non male come tendenza. Lo stomaco non fa le bizze, non ho effetti indesiderati.',
-lt146:  'In più l’organismo sembra stare meglio nel complesso, dormo meglio, sono più attivo e mi sento in forze. Mia moglie dice che ho smesso di russare, ma non posso dire se sia collegato o no al preparato.',
-lt147:  'Mi seno in forma, nel week end andiamo a pesca. Mi porto il preparato per tenere il ritmo da istruzioni. Non ho chiesto se con la vodka si può, ma nel dubbio, ci provo.',
-lt148:  'sono tornato dalla pesca, ho bevuto e mangiato, ma del composto non mi sono dimenticato. Lo stomaco non da problemi, nonostante i bagordi. Mi piace questo effetto.', 
-lt149:  'Risultati delle misurazioni: peso, 89 кg,pancia 122. Accipicchia, chi l’avrebbe mai detto. Di questi tempi non mi riconoscerà più nessuno a breve.',
-lt150:  'I pantaloni oramai mi cascano. Mia moglie è in estasi, mi porta per negozi a ricomprarmi i vestiti. Per ora mi rifiuto, non sopporto queste cose da donne. Per quanto riguarda l’organismo mi sento una bomba, non ho più problemi allo stomaco e la digestione va una favola, non ho neanche più problemi di fiato (salgo tranquillamente a piedi fino al sesto piano).',
-lt151:  'Dopodomani finisce il ciclo di assunzione del preparato, Ormai non mi rifiuto naeanche di fare shopping con mia moglie. Mi sento benissimo, ho perfino giocato a calcio con mio nipote senza svenire, o quasi.Lo stomaco non da problemi, tachicardia zero, pressione negli standard e zero effetti collaterali come avevano promesso, non mi hanno imbrogliato allora.',
-lt152:  'iniziamo con i risultati delle misure: peso, 84 кг, pancia, 113. mi sento come un astronauta! Ho perso quindi 14kg in sole tre settimane, e il mio grosso grasso amico di nome pancia è diminuito di 21 centimetri!fossi stato una donna sarei morto dalla gionia. Ma sono felice lo stesso. Certo, il fatto che per l’ennesima volta devo andare con mia moglie a rifarmi il guardaroba non è che sia proprio il massimo, ma il fatto che mi sento meglio, che non abbia più fiatone e dolore di stomaco, che posso giacare a calcio con mio  nipote senza avere un infarto, questo si, mi fa stare bene.',
-lt153:  'Dopo un mese dall’esperimento sono andato con mia moglie al compleanno di un ex collega, ho incontrato tutto il mio plotone. Pensavano fossi un qualche ragazzo che ha deciso di prendersi gioco di loro fingendosi un ufficiale!Abbiamo riso di gusto, ma il nome del preparato che ho testato ovviamente me lo sono appuntato.',
-lt154:  'Alessandra',
-lt155:  '41 anni, professoressa universitaria',
-lt156:  '-15 см ai fianchi',
-lt157:  '-12 кg di peso',
-lt158:  'Non appena ho saputo che creavano un gruppo per provare OneTwoSlim, mi ci sono iscritta subito! Ero disperata nel tentativo di dimagrire, non ero proprio cicciona, ma la pancia e questi fianchi, sono una maledizione tremenda! Ho degli accumuli che sembro un qualche animale ,fa senso perfino a me, non so come mio maritomi sopporti. Mi hanno misurato i fianchi, 97 см. quasi un metro! Ho preso la prima razione di prodotto con ansia e desiderio. Non mi sono accorda di un odore o di un sapore sgradevole, si beve come fosse acqua.',
-lt159:  'Terzo giorno, lo bevo sempre e solo seguendo le istruzioni, ovviamente non vedo ancora cambiamenti. Lo so che così in fretta non può succedere nulla, ma diamine come ci spero! Mi hanno detto di mangiare come al solito, quindi non ci presto attenzione alla dieta. E non è che sono capace a dire il vero: ogni volta che mi sono messa a dieta sono durata poco.',
-lt160:  'Mi sono accorta di avere meno appetito, e non so come spiegarlo, più energia o cosa? Dopo una lunga giornata di lavoro non mi addormento appena mi siedo, riesco tranquillamente a fare le faccende di casa, e riesco a preparare le lezioni in anticipo e perfino a fare i capricci con mio marito. Mi sveglio con tranuqillità ogni mattina senza dover ricorrere all’ “ imposto la sveglia tra 5 minuti”.',
-lt161:  'E’ passata una settimana, questo vuol dire che è tempo di prendere le misure. Peso 84,ho perso solo due kg. Ооо, invece i fianchi — 93! 4 in una settimana — questo io ad essere sincera mai me lo sarei aspettata! Nel mio caso è solo una goccia nel mare, ma non sapete quanto sia felice!',
-lt162:  'Inizio a sentire che potrebbe anche funzionare! Oggi sono entrata nella gonna, che se ne stava appesa in armadio da 5 anni e non riuscivo a mettermi in alcun modo. La metamorfosi del mio corpo in effetti è sotto gli occhi di tutti: gli accumuli di grassi sui fianchi perdono la loro consistenza, la pancia inizia a ritirarsi (per ora molto poco, ma già anche dalla gonna si vede), la pelle è più elastica. È molto strano da vedere, visto che non sto a dieta e non faccio nessus tipo di sport (se avessi fatto sport non sarei neanche mai arrivata a questi risultati).',
-lt163:  'Mia figlia dice che sembro molo più giovane epresto mi scambieranno per sua sorella. Fa piacere certo, ma capisco che lo dice solo per sostenermi. Io però in effetti mi sento giovane e piena di energie, come 20 anni fa! Molti dei vestiti del mio guardaroba presto non mi andranno più bene.',
-lt164:  'Mi scordo sempre di scriverlo. Avevo molta paura che una volta iniziato il dimarimento sarebbe dimagrita anche la faccia, comporatando la formazione delle rughe, non sono più una ragazzina. Ma no, dimagrisce solo la pancia e si sgonfiano piano piano i fianchi. Faccia e seno, per ora almeno, non sono mutati.',
-lt165:  'prima della misurazione ero nervosa, come una studentessa all’esame, anche se so che non dipende da me proprio nulla. E non è che testino me, ma OneTwoSlim. Ma il risultato non delude: peso, 79,finachi, 88! 5 centimetri, mi penzola la lingua come ad un cane!in due settimane sono 9! non ci posso credere! Non dirò nulla a nessuno, apparte il responsabile e questo diariom magari sennò mi porto sfortuna.',
-lt166:  'Sono felicissima! Penso che anche dopo aver finito il ciclo di cura mi rimarrà l’abitudine di bere un bicchiere d’acqua mattina e sera. Poi parlerò con il responsabile, magari in seguito sarà possibile effettuare un altro ciclo per fissare il risultato e migliorare la sicureza in me stessa.',
-lt167:  'Gli studenti mi riempiono di complimenti: oggi ho un completo nuovo, più piccolo di 2 misure, di quelli che usavo prima. Era tanto che non provavo piacere dal semplice acquisto di vestiti! Ecco quanto è importante per le ragazze la silhouette!',
-lt168:  'Oggi mi sono incontrata con una amica.Lei non lo sa ovviamente che sono all’interno del test per OneTwoSlim,non è risucita in nessun modo a trttenere la sorpresa e l’invidia nei confronti della mia forma fisica. Niente fomenta tanto comel’invidia femminile! Non potete capire che gusto nel vederla mangiare al bar un insalata mentre io mi gustavo una torta millesfoglie! Non è che sono perfida, mi godo la giustizia: quando ero più grassa tutto il tempo faceva battutine e si poneva come esempio, ed eccoci qui. Le donne mi capiranno!',
-lt169:  'Ed eccoci alla misurazione finale. Peso,  74, fianchi, 82. in questa settimana ho perso 5 кg e 6 см. e per tutta la durata dell’esperimento ho perso, in totale,  12 kg e 15 centimetri! In quanto a taglie a secondo dei vestiti questo vuol dire 2 e in alcuni casi addirittura 3 in meno! Allo stesso modo sono aumentati i complimenti di colleghi e studenti, e anche le attenzioni di mio marito. In più la mia nuova silhouette è l’orgoglio di mmia figlia, l’invidia delle amiche,  e una grande sicurezza in sé e sete di vita! Capisco che queste tre settimane sono solo il primo passo, e ho tutta una vita davanti. Ma sto già benissimo e mi sento in grande forma!',
-lt170:  'Il responsabile dice che posso fare un secondo ciclo tra un mese, e la mia pancia sarà paitta come quella di un bambino! E se mi costringo a fare esercizio fisico in aggiunta allora sembrerl proprio un’altra persona.a proposito, quasi dimenticavo: i miei fianchi, i miei rotoli dell’amore…. Scomparsi completamente!',
-lt171:  'Consegna per posta o corriere',
-lt172:  'Discrezione garantita. <em>pagamento alla consegna</em>',
-lt173:  'Come lavoriamo:',
-lt174:  'Compilate il modulo sul sito',
-lt175:  'Vi contattiamo al più presto',
-lt176:  'Spediamo il vostro pacco',
-lt177:  'Pagate alla consegna',
-lt178:  '<strong>I nostri operatori sono online</strong> <span class="call-sub-title">tutto il giorno senza pause, solo per voi!</span>',
-lt179:  'Per effettuare l’ordine basta compilare il modulo sul sito',
-lt180:  'In alto',
-lt181:  'Potete lasciarci<br>il vostro numero di telefono<br>e vi richiameremo entro 30 secondi!',
-lt182:  'Offerta',
-lt183:  'Fino alla fine dell’offerta rimane',
-lt184:  'Effettuare l’ordine',
-lt185:  '<span>6</span> Confezioni con lo sconto',
+  "lt0": "Stiamo preparando un articolo per voi  <div class=\"quest__ready-loop\">  <img alt=\"\" src=\"img/loop.png\">  </div> ",
+
+  "lt1": "Come dimagrire comodamente a casa?",
+
+  "lt2": "Oggi abbiamo fatto il test 1391 volte",
+
+  "lt3": "Superate il test",
+
+  "lt4": "e ricevete consigli individuali per perdere peso",
+
+  "lt6": "Quanti anni avete?",
+
+  "lt7": "Quanto pesate?",
+
+  "lt8": "Che misura indossate?",
+
+  "lt9": "Che lavoro fate? (Per capire il tipo di attività durante il giorno.)",
+
+  "lt10": "Mai fatte dieti? Se si quali, e quanto a lungo?",
+
+  "lt11": "Fate sforzi fisici? Se si quali, e quanto spesso?",
+
+  "lt12": "Rispondere",
+
+  "lt13": " <mark> Avviso: </mark> Se non volete fare il test ora, controllate le informazioni generali per una perdita di peso efficace.  <span class=\"js-quest__close\"> здесь. </span> ",
+
+  "lt14": "Menu",
+
+  "lt15": "Informazioni",
+
+  "lt16": "Su di noi",
+
+  "lt17": "Dimagrire",
+
+  "lt18": "News",
+
+  "lt19": "Bellezza",
+
+  "lt20": "Famiglia",
+
+  "lt21": "Terapia",
+
+  "lt22": "Cultura",
+
+  "lt23": "Coppia",
+
+  "lt24": "Beneficenza",
+
+  "lt25": "Dimagrimento",
+
+  "lt26": "Tornare",
+
+  "lt27": "Home",
+
+  "lt29": "Articoli",
+
+  "lt31": "Dimagrire",
+
+  "lt33": "Dimagrisci rapidamente",
+
+  "lt35": "XX",
+
+  "lt36": "Giochi mentali: come il cervello vi fa dimagrire",
+
+  "lt37": "Risultati del test",
+
+  "lt38": "Data del post  <span id=\"dataPost\"> 06.10.20 </span> ",
+
+  "lt39": "Nel seguire gli standard di bellezza, spesso ci scordiamo la cosa principale: la perdita di peso inizia dalla testa. Tutti i processi nel nostro organismo vengono in qualche modo diretti dal cervello. Per perdere peso, è necessario comprendere i propri pensieri e i meccanismi dei processi psicofisici che ci aiutano a perdere peso. E, naturalmente, bisogna essere in armonia con se stessi.",
+
+  "lt40": "Questo articolo è stato scritto per aiutarvi a rigenerare la mente e sintonizzarvi nel modo giusto per ottenere il risultato desiderato. In modo che dopo un paio di settimane nel guardarvi allo specchio vedrete una versione più bella di voi, acquisendo così sicurezza.",
+
+  "lt41": "Ma andiamo con ordine.",
+
+  "lt42": "Per iniziare voglio parlare di alcuni aspetti psicologici, nodi a chiunque voglia dimagrire.",
+
+  "lt43": "Voglio dimagrire ma non riesco a smettere di mangiare!",
+
+  "lt44": "Rispondete a questa domanda: perché volete dimagrire? Spesso il problema è la mancanza di motivazione. Siate chiaro su ciò che volete. State bene con i vostri vestiti preferiti? Vi piacete allo specchio? Come va con gli uomini?",
+
+  "lt45": "Avvicinandotv di notte al frigorifero, pensate: vale la pena mettere questo panino tra me e il mio osgno? Il sapore di questa salsiccia è abbastanza buono per trascorrere il resto dei mei giorni tra i complessi? Dovete stabilire le giuste priorità.",
+
+  "lt46": "Il problema diventa ciclico",
+
+  "lt47": "Più pensate \"oh come sono grassa\", devo mettermi a dieta ecc. Più grande Diventerà lo «stress». Dopo aver mangiato poco o niente per una settimana, limitandovi all’alimentazione minima e perdendo un paio di chili, decidete di festeggiare con un bel gelatone o con una torta intera.",
+
+  "lt48": "«E allora? Me lo posso permettere!», non è vero. Con questo sistema prenderete molti chili subito, e perderli sarà difficile. Molto difficile.",
+
+  "lt49": "Pochi momenti di piacere cancellano tutti i vostri sforzi e si trasformano in settimane di autoflagellazione. Poi ritrovate la forza per una nuova dieta, che termina con una pausa, non a vostro favore ovviamente.",
+
+  "lt50": "Forze però è arrivato il momento di chiudere questo circolo vizioso?",
+
+  "lt51": "Sono riuscita a dimagrire ma il peso poi torna",
+
+  "lt52": "Ogni persona che abbia mai provato a perdere peso sa che questo è un processo relativamente semplice. Magari ti metti le gambe in spalla, sei a dieta e il peso diminuisce gradualmente. Ma non appena torni al tuo solito modo di vivere, il peso ritorna.",
+
+  "lt53": "Esistono solo due modi per evitare questo problema:",
+
+  "lt54": "  <b> Cambiare totalmente il proprio rapporto con l’alimentazione. </b>  Capire che mangiamo per vivere e non viceversa. Rinunciare al cibo delizioso a favore dei prodotti al vapore: broccoli, cavoletti di Bruxelles, petto di pollo ... E seguire questa dieta per tutta la vita.",
+
+  "lt55": "  <b> Utilizzare stimolatori per il dimagrimento sicuri. </b>  Come già detto, il dimagrimento dipende molto dalla testa. Non si tratta solo dei pensieri, ma anche di segnali neurali che il cervello riceve quando mangiamo. Il cibo dolce, grasso o da fast food è sempre molto gustoso, quindi il consumo di questi particolari alimenti colpisce i centri del piacere. Il rifiuto di tale cibo porta una persona allo sconforto.",
+
+  "lt56": "Amare il cibo salutare e ricevere piacere Nell’assumerlo non è così semplice. Per rompere quest’anello del «tutto quello che è buono fa male» e creare un binomio «salutare: buono», bisogna prima di tutto convincersi. E non è così semplice.",
+
+  "lt57": "Gli scienziati del Massachusetts Institute di diete sperimentali hanno affrontato seriamente questo problema solo nel 2015. Lo studio è stato commissionato da Johan Morris, il fondatore del concetto di perdita di peso psicologica. Un gruppo di scienziati sotto la sua guida ha scoperto quali processi psico-emotivi influenzano la percezione del gusto del cibo. Sulla base dei dati ottenuti, è stato sviluppato un farmaco che blocca i centri cerebrali responsabili del piacere del cibo.",
+
+  "lt58": "Johan Morris",
+
+  "lt59": "«Bisogna capire che il cervello ci inganna. Non sentiamo il vero sapore del cibo essendo dipendenti dal cibo spazzatura. Il blocco dei recettori del piacere porta al fatto che iniziamo a sentire il vero gusto del cibo e le preferenze precedenti iniziano a sembrarci non reali.»",
+
+  "lt60": "Per dimostrare le proprie parole Johan Morris ha mostrato gli studi clinici sul preparato sensazionale  <a href=\"\"> XX </a> .",
+
+  "lt61": "A quanto pare grazie a questo preparato la rete nervosa del cervello non trasmette più gli stessi segnali, in questo modo la fame e la stanchezza semplicemente non compaiono.  <a href=\"\"> XX </a>  velocizza il metabolismo, trasforma il grasso in energia e ripristina il funzionamento corretto degli organi interni.",
+
+  "lt62": "Il preparato migliora i processi digestivi e consente al corpo di sbarazzarsi di chili in più da solo. Durante il ciclo di  <a href=\"\">  XX  </a>  vengono bruciati i depositi di grasso più problematici e si avvia il corretto funzionamento del tratto digestivo. Dopo la fine del ciclo il recupero di massa grassa è impossibile: l’organismo ormai sarà programmato per il lavoro necessario per perdere peso e mantenerlo nella norma",
+
+  "lt63": "Da noi il preparato può essere ordinato solo sul sito ufficiale del produttore.",
+
+  "lt64": "Più pensate \"oh come sono grassa\", devo mettermi a dieta ecc. Più grande Diventerà lo «stress». Dopo aver mangiato poco o niente per una settimana, limitandovi all’alimentazione minima e perdendo un paio di chili, decidete di festeggiare con un bel gelatone o con una torta intera.",
+
+  "lt65": "Pochi momenti di piacere cancellano tutti i vostri sforzi e si trasformano in settimane di autoflagellazione. Poi ritrovate la forza per una nuova dieta, che termina con una pausa, non a vostro favore ovviamente.",
+
+  "lt66": "Forze però è arrivato il momento di chiudere questo circolo vizioso?",
+
+  "lt67": "Dimagrire si, è facile, ma poi i chili in eccesso tornano come se niente fosse e gli sforzi sono inutili",
+
+  "lt68": "Esistono solo due modi per evitare questo problema:",
+
+  "lt69": "  <b> Cambiare totalmente il proprio rapporto con l’alimentazione. </b>  Capire che mangiamo per vivere e non viceversa. Rinunciare al cibo delizioso a favore dei prodotti al vapore: broccoli, cavoletti di Bruxelles, petto di pollo ... E seguire questa dieta per tutta la vita.",
+
+  "lt70": "  <b> Utilizzare stimolatori per il dimagrimento sicuri. </b>  Come già detto, il dimagrimento dipende molto dalla testa. Non si tratta solo dei pensieri, ma anche di segnali neurali che il cervello riceve quando mangiamo. Il cibo dolce, grasso o da fast food è sempre molto gustoso, quindi il consumo di questi particolari alimenti colpisce i centri del piacere. Il rifiuto di tale cibo porta una persona allo sconforto.",
+
+  "lt71": "Amare il cibo salutare e ricevere piacere Nell’assumerlo non è così semplice. Per rompere quest’anello del «tutto quello che è buono fa male» e creare un binomio «salutare: buono», bisogna prima di tutto convincersi. E non è così semplice.",
+
+  "lt72": "Gli scienziati del Massachusetts Institute di diete sperimentali hanno affrontato seriamente questo problema solo nel 2015. Lo studio è stato commissionato da Johan Morris, il fondatore del concetto di perdita di peso psicologica. Un gruppo di scienziati sotto la sua guida ha scoperto quali processi psico-emotivi influenzano la percezione del gusto del cibo. Sulla base dei dati ottenuti, è stato sviluppato un farmaco che blocca i centri cerebrali responsabili del piacere del cibo.",
+
+  "lt73": "Johan Morris",
+
+  "lt74": "«Bisogna capire che il cervello ci inganna. Non sentiamo il vero sapore del cibo essendo dipendenti dal cibo spazzatura. Il blocco dei recettori del piacere porta al fatto che iniziamo a sentire il vero gusto del cibo e le preferenze precedenti iniziano a sembrarci non reali.»",
+
+  "lt75": "Per dimostrare le proprie parole Johan Morris ha mostrato gli studi clinici sul preparato sensazionale  <a href=\"\"> XX </a> .",
+
+  "lt76": "A quanto pare grazie a questo preparato la rete nervosa del cervello non trasmette più gli stessi segnali, in questo modo la fame e la stanchezza semplicemente non compaiono.  <a href=\"\"> XX </a>  velocizza il metabolismo, trasforma il grasso in energia e ripristina il funzionamento corretto degli organi interni.",
+
+  "lt77": "Il preparato migliora i processi digestivi e consente al corpo di sbarazzarsi di chili in più da solo. Durante il ciclo di  <a href=\"\">  XX  </a>  vengono bruciati i depositi di grasso più problematici e si avvia il corretto funzionamento del tratto digestivo. Dopo la fine del ciclo il recupero di massa grassa è impossibile: l’organismo ormai sarà programmato per il lavoro necessario per perdere peso e mantenerlo nella norma",
+
+  "lt78": "Da noi il preparato può essere ordinato solo sul sito ufficiale del produttore.",
+
+  "lt79": "Tutto quello che dovete fare è inserire nome e numero di telefono.  <span> Affrettatevi! Vi rimangono: </span>   <div class=\"all-form__count\">  <span class=\"all-form__min\"> 14 </span>  :  <span class=\"all-form__sec\"> 37 </span>  </div> ",
+
+  "lt80": "Modulo d’ordine  <span> XX </span> ",
+
+  "lt81": "Nazione",
+
+  "lt83": "Nome:",
+
+  "lt84": "Telefono:",
+
+  "lt85": "Ricevere con uno sconto del 50%",
+
+  "lt88": "Commenti",
+
+  "lt89": "Federica Seno:",
+
+  "lt91": "Ha, ma stanno parlando di me… ogni volta che mi metto a dieta poi mi mangio mezza casa. Come sotto ipnosi, le mie gambe mi portano al frigorifero e mangio tonnellate di cibo spazzatura. Naturalmente, al mattino, vedo numeri deludenti sulla bilancia",
+
+  "lt92": "Carolina di Stasi:",
+
+  "lt94": "Studio interessante. Mi sa che me lo ordino  <a href=\"\"> XX </a> . Chi l’ha provato mi dice se ne vale la pena?",
+
+  "lt95": "Gloria Valle:",
+
+  "lt97": "Io è una settimana che uso  <a href=\"\"> XX </a> . L'atteggiamento nei confronti del cibo è cambiato. Ora mangio cibo sano e non provo più problemi. Beh, sai, quando passi improvvisamente dalla dieta abituale a quella giusta, vuoi costantemente mangiare qualcosa di grasso. Non ho questo tipo di desideri invece. Ho perso 2 kg durante questo periodo. Beh, non ho molto peso in eccesso, solo 8 chili.",
+
+  "lt98": "Simona Giallo:",
+
+  "lt100": "anche io prendo  <a href=\"\"> XX </a>  ora. Sono completamente d’accordo con Gloria. Mi è anche calato l’appetito e mi sento leggera ed energica. L’organismo sembra rinatoе.",
+
+  "lt101": "Francesca Visone:",
+
+  "lt103": "Ho letto le recensioni ed ho ordinato  <a href=\"\"> XX </a> , non vedo l’ora di provarlo…!",
+
+  "lt104": "Clara Simoncelli:",
+
+  "lt106": "Grazie per l’articolo!",
+
+  "lt107": "Michele Pozzobello:",
+
+  "lt109": "Un trucco insomma:)",
+
+  "lt110": "Elena Oggi:",
+
+  "lt112": "Io con  <a href=\"\"> XX </a>  ho perso 10 kg in un mese! Per così tanti anni non sono riuscita a chiudere la bocca e mangiare di meno, ma alla fine si è rivelato molto facile.",
+
+  "lt113": "Clara Pinamonti:",
+
+  "lt115": "Ho 50 anni, peso 78 kg. È sicuro  <a href=\"\"> XX </a>  alla mia età?",
+
+  "lt116": "Giordana Seme:",
+
+  "lt118": "Mia madre ha 60 anni e prende  <a href=\"\"> XX </a> . Il medico dice che è molto sicuro.",
+
+  "lt120": "Volete scrivere un messaggio?",
+
+  "lt121": "Inviare",
+
+  "lt122": "Stanno legendo",
+
+  "lt123": "Salute e bellezza. L’industria della bellezza e i suoi segreti...",
+
+  "lt124": "Tipi di culture, forme, aspetti. Le funzioni della cultura...",
+
+  "lt125": "La terapia dell’umore. Metodo dimostrato clinicamente.",
+
+  "lt126": "I più letti",
+
+  "lt127": "/ recensioni degli esperti",
+
+  "lt128": "Strategie di dimagrimento: come perdere peso una volta per tutte.",
+
+  "lt129": "Come allenare tutto il corpo comodamente da casa? Allenamento...",
+
+  "lt130": "Meditazione: come iniziare e cosa fare..",
+
+  "lt131": "Condividere",
+
+  "lt132": "I problemi principali del dimagrimento",
+
+  "lt133": "Antiossidanti",
+
+  "lt134": "Dimagrire senza diete",
+
+  "lt135": "Mangiare crudo",
+
+  "lt136": "Alimentazione cronica",
+
+  "lt137": "Dieta senza glutine",
+
+  "lt138": "Vegetariani",
+
+  "lt139": "Dieta vegetariana",
+
+  "lt140": "Regime dissociato",
+
+  "lt141": "Partners",
+
+  "lt142": "DIMAGRIRE SENZA DIETA",
+
+  "lt143": "Psychologies, 2019 –  <script> document.write(new Date().getFullYear()) </script>  "
+
 };
 
-function Translater () {
-            for (class_name in new_lang) {
-                var elements = document.getElementsByClassName(class_name);
-                if (elements.length) {
-                    for (key in elements) {
-                        elements[key].innerHTML = new_lang[class_name];
-                    }
-                }
-            }
+function Translater() {
+  for (class_name in new_lang) {
+    var elements = document.getElementsByClassName(class_name);
+    if (elements.length) {
+      for (key in elements) {
+        elements[key].innerHTML = new_lang[class_name];
+      }
+    }
+  }
 };
