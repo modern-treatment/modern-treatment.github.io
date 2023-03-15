@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thank you!</title>
+	<link rel="stylesheet" href="cdn/success/css/style.css">
+	<script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/cdn/js/jquery.js"></script>
+    <script type="text/javascript" src="/cdn/js/leadbit_success.js"></script>
+</head>
+<body>
+<div class="page-container">
+	<div class="page-container__order">
+		<div class="language language__order">
+			<div class="language__container">
+			</div>
+		</div>
+		<div class="order page-container__item visible" data-country="IT">
+			<div class="order__box">
+				<div class="order__header">
+					<div class="order__container">
+						<div class="order__header-title">Grazie!</div>
+						<div class="order__header-subtitle">La sua domanda è stata elaborata e accettata per l'esecuzione dal nostro staff!</div>
+						<div class="order__header-description">Per confermare la richiesta, uno specialista li contatterà a breve.</div>
+					</div>
+				</div>
+				<div class="order__body">
+					<div class="order__container">
+						<div class="order__body-title">Ottieni un codice promozionale per un
+							<mark>confezione gratuito</mark> con il suo ordine.
+						</div>
+						<div class="order__body-description">Lascia la sua e-mail e vi invieremo un codice promozionale con il quale riceverai in omaggio un confezione del prodotto.*</div>
+						<div class="order__body-media">
+							<img src="/cdn/success/img/ryka.png" alt="">
+						</div>
+						<div class="order__body-info">*Un confezione gratuito con l'acquisto del corso</div>
+					</div>
+				</div>
+				<div class="order__footer">
+					<div class="order__footer-header">
+						<div class="order__container">
+							<form action="send.php" method="post" class="order__form order-form" id="email_form">
+								<div class="order__label">
+									<div class="order__label-media">
+										<img src="/cdn/success/img/kolokol.png" alt="">
+									</div>
+									<input type="email" name="email" class="order__input" placeholder="inserisci il tuo indirizzo email">
+								</div>
+								<input data-error="Inserisci il tuo indirizzo email" data-success="Grazie per l`iscrizione! La tua email è stata salvata!" class="order__btn btn-save" type="submit" value="Ottenere un codice promozionale" onclick="location.href='/cdn/success/pages/check/check.it.html';">
+							</form>
+						</div>
+					</div>
+					<div class="order__footer-body">
+						<div class="order__container">Conferma la propria e-mail per 2 ore per ricevere il codice promozionale!</div>
+					</div>
+					<div class="order__footer-bottom">
+						<div class="order__container">Non divulghiamo e trasferiamo i dati personali che ci fornite attraverso il nostro sito a terzi. Cliccando su questo pulsante,
+							<span>accetti la ricezione di email informative.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>$("form").attr("action", "send.php"); $("form").attr("method", "post");</script></body>
+</html>

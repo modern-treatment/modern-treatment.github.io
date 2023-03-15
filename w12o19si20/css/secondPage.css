@@ -1,0 +1,2914 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.hidden-window {
+  display: none;
+}
+
+.second-page__container {
+  min-width: 280px;
+  max-width: 1020px;
+  margin: auto;
+}
+
+.second-page__wrapper {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  /*height: 100vh;*/
+  /*padding-top: 30px;*/
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Roboto", sans-serif;
+  background: url("//dadbab.info/content/second/Diet_Stars_IT/imagesSec/pattern.png") repeat, #f21d7a;
+  z-index: 0;
+}
+
+.wrapper-bg {
+  height: 100%;
+  background: -moz-linear-gradient(bottom, rgba(242,29,122,1) 0%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, rgba(242,29,122,1) 0%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, rgba(242,29,122,1) 0%,rgba(255,255,255,0) 66%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f21d7a', endColorstr='#00ffffff',GradientType=0 );
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.second-page__wrapper:after {
+  content: "";
+  position: absolute;
+
+  display: block;
+  width: 50%;
+  height: 830px;
+}
+
+.hidden-window {
+  position: relative;
+}
+
+.clearfix:after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/*.hidden-window {
+    display: none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    min-height: 100%;
+    line-height: 1 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px !important;
+    overflow: hidden;
+}
+
+.hidden-window *,
+.hidden-window :before,
+.hidden-window :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+.hidden-window *::-webkit-input-placeholder {
+    color: #899099;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-overflow: ellipsis;
+}
+
+.hidden-window *::-moz-placeholder {
+    color: #899099;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-overflow: ellipsis;
+}
+
+.hidden-window *:-moz-placeholder {
+    color: #899099;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-overflow: ellipsis;
+}
+
+.hidden-window *:-ms-input-placeholder {
+    color: #899099;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-overflow: ellipsis;
+}
+
+.hidden-window *:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.hidden-window *:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+.hidden-window *:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+.hidden-window *:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.hidden-window ul {
+    list-style: none !important;
+}*/
+
+
+/*HEADER*/
+
+.second-page__header {
+  margin-bottom: 42px;
+  margin-top: 42px;
+}
+
+.second-page__header .second-page__container {
+  position: relative;
+  z-index: 100;
+}
+
+.second-page__header-inner {
+  position: relative;
+  z-index: 20;
+
+  padding: 15px 0;
+
+  font-size: 0;
+  background: rgb(6,194,234); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(6,194,234,1) 0%, rgba(9,217,247,1) 50%, rgba(6,194,234,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(6,194,234,1) 0%,rgba(9,217,247,1) 50%,rgba(6,194,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(6,194,234,1) 0%,rgba(9,217,247,1) 50%,rgba(6,194,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06c2ea', endColorstr='#06c2ea',GradientType=1 ); /* IE6-9 */
+}
+.top_unit {
+  position: absolute;
+  bottom: -76px;
+  left: -12px;
+  z-index: 21;
+}
+
+.second-page__header .logo {
+  position: relative;
+  display: inline-block;
+  width: 63%;
+  margin-right: 5%;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 74px;
+  font-family: "Roboto", sans-serif;
+  vertical-align: bottom;
+  text-align: right;
+  color: #ffffff;
+}
+
+
+.second-page__header .logo:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 205px;
+  background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/star.png) no-repeat;
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: auto;
+}
+
+.second-page__header .stamp-list {
+  display: inline-block;
+  width: 31%;
+
+  font-size: 0;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.second-page__header .stamp-list li {
+  display: inline-block;
+  margin-right: 15px;
+
+  vertical-align: top;
+}
+
+.second-page__header .stamp-list li:nth-of-type(2) img {
+  position: relative;
+  top: -4px;
+}
+.second-page__header .stamp-list li:last-child {
+  margin-right: 0;
+}
+
+.second-page__header .logo span {
+  font-weight: 400;
+  color: #fa4863;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MAIN*/
+
+.second-page__main {
+  font-size: 0;
+  text-align: center;
+}
+
+.second-page__main .second-page__main-left,
+.second-page__main .second-page__main-right {
+  position: relative;
+  z-index: 1000;
+
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.second-page__main-left {
+  width: 63%;
+  margin-right: 4.2%;
+}
+
+.second-page__main-right {
+  position: relative;
+
+  width: 32.8%;
+}
+
+.second-page__main-left .inner-block {
+  display: table;
+
+/*border-radius: 10px;*/
+  /*-moz-border-radius: 10px;*/
+  /*-webkit-border-radius: 10px;*/
+  padding-bottom: 20px;
+
+  background: #ffffff;
+
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.inner-block-wrapper {
+  position: relative;
+  padding: 5px;
+  background: #06c3ea;
+
+/*border-radius: 10px;*/
+  /*-moz-border-radius: 10px;*/
+  /*-webkit-border-radius: 10px;*/
+
+  transition: 0.5s;
+}
+
+@-webkit-keyframes thumb {
+  0% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.99);
+       -moz-transform: scale(0.99);
+         -o-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-moz-keyframes thumb {
+  0% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.99);
+       -moz-transform: scale(0.99);
+         -o-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-o-keyframes thumb {
+  0% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.99);
+       -moz-transform: scale(0.99);
+         -o-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes thumb {
+  0% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.99);
+       -moz-transform: scale(0.99);
+         -o-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.hidden-window .second-page__main-right .hidden-window-form.js_scrollForm.active {
+  -webkit-animation: thumb 100ms linear 6;
+     -moz-animation: thumb 100ms linear 6;
+       -o-animation: thumb 100ms linear 6;
+          animation: thumb 100ms linear 6;
+}
+
+.slider-list li:nth-child(3) .inner-block-wrapper .hidden-window__item__product-wrapper {
+  margin-left: 65px;
+}
+
+.slider-list li:nth-child(4) .inner-block-wrapper .hidden-window__item__product-wrapper {
+  margin-left: 20px;
+}
+
+.slider-list li:nth-child(4) .hidden-window__item__product-wrapper img:nth-child(3) {
+  left: 65px;
+}
+
+
+
+.slider-list li:nth-child(5) .hidden-window__item__product-wrapper img:nth-child(1) {
+  bottom: -5px;
+  left: 23px;
+}
+
+.slider-list li:nth-child(5) .hidden-window__item__product-wrapper img:nth-child(2) {
+  z-index: 1;
+
+  margin-left: -87px;
+}
+
+.slider-list li:nth-child(5) .hidden-window__item__product-wrapper img:nth-child(3) {
+  left: 150px;
+}
+
+.slider-list li:nth-child(5) .present-block__text {
+  left: -26px;
+}
+
+.slider-list li:nth-child(5) .present-block__images img:nth-child(3) {
+  left: -3px;
+}
+
+
+.slider-list li:nth-child(3) .hidden-window__item-img .present-block {
+  left: 145px;
+}
+
+.slider-list li:nth-child(3) .present-block__images:before {
+  top: 31px;
+  left: -15px;
+}
+
+.slider-list li:nth-child(3) .present-block__text {
+  left: -25px;
+}
+
+.slider-list li:nth-child(4) .hidden-window__item-img .present-block {
+  left: 146px;
+  top: 99px;
+}
+
+.slider-list li:nth-child(4) .present-block__text {
+  bottom: -25px;
+  left: -30px;
+}
+
+.slider-list li:nth-child(4) .present-block__images img:nth-child(3) {
+  bottom: 9px;
+  left: -10px;
+  z-index: 1;
+}
+
+.hidden-window__item {
+  display: table-cell;
+  width: 40%;
+  padding-top: 45px;
+
+  vertical-align: top;
+}
+
+.slider-list li:nth-child(4) .present-block__images:before {
+  top: 28px;
+  left: -8px;
+  margin: auto;
+}
+
+.h-w-text-total {
+  margin: 20px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.h-w-text-total span {
+  font-weight: 700;
+  font-size: 30px;
+  color: #f21c79;
+}
+
+.second-page__main-left .bx-bx > li.active {
+  transform: scaleX(1.03);
+}
+
+.second-page__main-left .bx-bx > li.active .inner-block-wrapper {
+/*  width: 100%;*/
+  background: #ffd004;
+}
+
+
+
+.inner-block__description {
+  display: table-cell;
+  width: 55%;
+  padding-right: 25px;
+
+  vertical-align: top;
+}
+
+.hidden-window .h-w-check {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  z-index: 1000;
+  width: 22px;
+  height: 22px;
+  margin-top: -30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 0 0 4px #ffd004, inset 4px 4px 4px 0 rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 0 0 4px #e0c42f, inset 4px 4px 4px 0 rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0 0 4px #ffd004, inset 4px 4px 4px 0 rgba(0, 0, 0, 0.075);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.hidden-window .h-w-check:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: auto;
+
+  font-size: 20px;
+
+  background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/check4.png) no-repeat center;
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.hidden-window .second-page__main .bx-bx > li.active .h-w-check:before {
+  opacity: 1;
+}
+
+.hidden-window__item-img {
+  position: relative;
+
+  margin-right: 20px;
+}
+
+.hidden-window__item-sale {
+  position: absolute;
+  top: 20px;
+  left: -2px;
+
+  width: 135px;
+
+/*border-radius: 5px 0 0px 5px;*/
+  height: 24px;
+  padding: 4px 0;
+  padding-right: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background: #97be00;
+}
+
+.hidden-window__item-sale:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 12px solid #97be00;
+}
+
+.hidden-window__item__product-wrapper {
+  margin-top: 20px;
+}
+
+.hidden-window__item__product-wrapper img {
+  position: relative;
+
+  display: inline-block;
+  margin: auto;
+
+  vertical-align: middle;
+}
+
+.hidden-window__item__product-wrapper img.one_package:nth-child(1) {
+  height: 165px;
+  margin-left: 60px;
+}
+
+.hidden-window__item__product-wrapper img:nth-child(1) {
+  z-index: 20;
+
+  height: 150px;
+}
+
+.hidden-window__item__product-wrapper img:nth-child(2) {
+  z-index: 15;
+
+  height: 120px;
+  margin-left: -35px;
+}
+
+.hidden-window__item__product-wrapper img:nth-child(3) {
+  position: absolute;
+  bottom: 15px;
+  left: 120px;
+
+  height: 120px;
+}
+
+.hidden-window__item__product-wrapper img:nth-child(4) {
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
+
+  height: 120px;
+}
+
+
+
+.hidden-window__item-img .present-block {
+  position: absolute;
+  top: 64px;
+  left: 130px;
+  z-index: 100;
+}
+
+.present-block__images {
+  position: relative;
+}
+
+.present-block__images:before {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: -14px;
+  z-index: 1;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background: #ffd004;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+.present-block__images:after {
+  content: "";
+  position: absolute;
+  top: 68%;
+  left: -22px;
+  z-index: 30;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/plus.png) no-repeat center;
+}
+
+.present-block__images img {
+  position: relative;
+  z-index: 2;
+  max-height: 60px;
+  margin-top: 30px;
+  margin-left:  0px;
+}
+
+
+.present-block__images img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+
+  height: 60px;
+}
+
+.present-block__images img:nth-child(2) {
+  z-index: 1;
+  height: 60px;
+  margin-bottom: 7px;
+  margin-left: -25px;
+}
+
+.present-block__text {
+  position: absolute;
+  bottom: -30px;
+  left: -28px;
+  z-index: 20;
+
+  width: 93px;
+  padding: 5px 2px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: #f21d7a;
+}
+
+
+.hidden-window__item__best {
+  position: absolute;
+  top: 0;
+  left: 170px;
+
+  width: 85px;
+  padding-top: 8px;
+  padding-bottom: 15px;
+  background: #ffd004;;
+}
+
+.hidden-window__item__best:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 0;
+  height: 0;
+  margin: auto;
+
+  border-right: 40px solid transparent;
+  border-bottom: 15px solid #ffffff;
+  border-left: 40px solid transparent;
+}
+
+
+.hidden-window__item__best p {
+  margin: 10px 0;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.hidden-window__item-sale:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/sale-after.png) no-repeat center;
+}*/
+
+.hidden-window__item-sale span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.inner-block__description-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.inner-block__description-tagline {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  font-style: italic;
+}
+
+
+
+.inner-block__description-result {
+  width: 85%;
+  position: relative;
+  display: inline-block;
+  /*border-radius: 5px;*/
+  margin: 15px auto;
+  padding: 10px 20px 10px 25px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  color: #ffffff;
+  /*background: #174264;*/
+  background: #97be00;
+  background-size: 100% 100%;
+}
+.inner-block__description-result:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 21px solid transparent;
+  border-bottom: 21px solid transparent;
+  border-right: 12px solid #97be00;
+}
+.inner-block__description-result {
+  /* margin-left: -170px; */
+}
+
+.hidden-window .bx-bx > li[data-value="3"] .inner-block__description-result,
+.hidden-window .bx-bx > li[data-value="5"] .inner-block__description-result,
+.hidden-window .bx-bx > li[data-value="7"] .inner-block__description-result {
+  /* margin-left: 10px; */
+}
+
+.inner-block__description-result:before {
+  /*content: "";*/
+  position: absolute;
+  top: 0;
+  left: -15px;
+
+  display: block;
+  width: 0;
+  height: 0;
+  min-height: 66px;
+  border-top: 20px solid transparent;
+  border-right: 15px solid #174264;
+  border-bottom: 20px solid transparent;
+}
+
+.inner-block__description-text {
+  margin-top: 0;
+  margin-bottom: 15px;
+  min-height: 66px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.hidden-window__item-balance span {
+  font-weight: 700;
+  font-size: 60px;
+  color: #97be00;
+}
+
+.hidden-window__item-balance {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 45px;
+  position: absolute;
+  bottom: 26px;
+  left: 112px;
+}
+
+.inner-block .present {
+  width: 93px;
+  padding: 5px 7px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: #91425c;
+}
+
+.inner-block__description-price {
+  position: relative;
+
+  padding: 15px 0;
+
+  font-size: 0;
+  text-align: left;
+}
+
+.inner-block__description-price:before,
+.inner-block__description-price:after {
+  content: "";
+  position: absolute;
+  left: -15px;
+
+  display: block;
+  width: 100%;
+  height: 1px;
+
+  background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/dash.png) no-repeat center;
+}
+
+.inner-block__description-price:before {
+  top: 0;
+}
+
+.inner-block__description-price:after {
+  bottom: 0;
+}
+
+.inner-block__description-price--new {
+  display: inline-block;
+  margin-right: 15px;
+
+  font-size: 24px;
+  line-height: 25px;
+  vertical-align: bottom;
+  color: #b49874;
+}
+
+.inner-block__description-price--new span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 24px;
+  color: #f21d7a;
+}
+
+.inner-block__description-price--new span.price-text {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+
+.inner-block__description-price--old {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: bottom;
+  color: #a3a3a3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RIGHT SIDE*/
+
+.second-page__form {
+  position: relative;
+  z-index: 10;
+
+/*border-radius: 10px;*/
+  /*-moz-border-radius: 10px;*/
+  /*-webkit-border-radius: 10px;*/
+
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4d0510+0,3a091c+100 */
+
+  background: #ffd004;
+}
+
+
+.free-delivery {
+  background: #ffbb04;
+  width: 275px;
+  margin: 0px auto -30px;
+  padding-top: 20px;
+}
+
+/*.second-page__main-right--leaves {
+    position: absolute;
+    right: -80px;
+    top: -155px;
+    z-index: 5;
+}*/
+
+
+
+
+.second-page__form .custom-field,
+.second-page__form .inp {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 275px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-left: 15px;
+
+  font-size: 15px;
+  color: #899099;
+
+  border: 1px solid #174264;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  outline: none!important;
+}
+
+/*.second-page__main input[name="postal_code"],
+.second-page__main input[name="street"] {
+  margin-right: 10px;
+}
+
+.second-page__main input[name="postal_code"] {
+  width: 85px;
+  margin-right: 10px;
+}
+
+.second-page__main input[name="street"],
+.second-page__main input[name="city"] {
+  width: 180px;
+}
+
+.second-page__main input[name="house"] {
+  width: 85px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.second-page__main input[name="floor"],
+.second-page__main input[name="housing"],
+.second-page__main input[name="apartment"] {
+  width: 130px;
+}
+
+.second-page__main input[name="floor"] {
+  margin-right: 15px;
+}*/
+
+.second-page__form .textarea-field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 275px;
+  min-height: 120px;
+  padding-top: 15px;
+  padding-left: 15px;
+
+  font-size: 15px;
+
+  border: 1px solid #83aa1c;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  /*margin-bottom: 10px;*/
+}
+
+.change-select {
+  text-indent: 0.01px;
+  text-overflow: "";
+
+  background: #ffffff url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/sel.png) no-repeat 95%;
+
+/*for WebKit*/
+
+  -webkit-appearance: none;
+
+/* for FF */
+     -moz-appearance: none;
+
+/* for IE */
+      -ms-appearance: none;
+          appearance: none!important;
+}
+
+.second-page__main-right h3 {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.second-page__main-right .second-title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.slider-list li {
+  margin-bottom: 20px;
+  padding-right: 5px!important;
+  padding-left: 5px!important;
+}
+
+.hidden-window .bx-viewport {
+  overflow: visible!important;
+}
+
+.slider-list li:last-child {
+  margin-bottom: 0;
+}
+
+.second-page__form--pay-delivery {
+  display: block;
+  width: 275px;
+  margin: auto;
+  margin-top: 12px;
+
+/*border-radius: 5px;*/
+  /*-moz-border-radius: 5px;*/
+  /*-webkit-border-radius: 5px;*/
+  padding: 20px 10px;
+
+  background: #ffbb04;
+}
+
+.second-page__main .delivery-price {
+  margin-top: 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.second-page__form-button {
+  width: 255px;
+  padding: 15px 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  box-shadow: 0px 1px 1px #000;
+  background: #ecffa5;
+  border: none;
+  outline: none!important;
+
+/*border: 2px solid #fff;*/
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffed8b', endColorstr='#dbbe21',GradientType=0 );
+
+  transition: 0.5s;
+}
+
+.second-page__form-button:hover {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+       -ms-transform: scale(1.1);
+       transform: scale(1.1);
+}
+
+.transition-text {
+  position: relative;
+
+  margin: 20px 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.transition-text:before,
+.transition-text:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+
+  display: block;
+  width: 72px;
+  height: 1px;
+  background: #ecffa5;
+}
+
+.transition-text:before {
+  left: 45px;
+}
+
+.transition-text:after {
+  right: 45px;
+}
+
+.pay-link {
+  display: block;
+  width: 255px;
+  margin: auto;
+  padding: 20px 0;
+  box-shadow: 0 4px 2px #566d01;
+  text-shadow: -0.5px -0.5px 0px #2d3803;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #647d02;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgb(185,220,52); /* Old browsers */
+  background: -moz-linear-gradient(-76deg, rgba(185,220,52,1) 48%, rgba(163,205,1,1) 53%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-76deg, rgba(185,220,52,1) 48%,rgba(163,205,1,1) 53%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(167deg, rgba(185,220,52,1) 48%,rgba(163,205,1,1) 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9dc34', endColorstr='#a3cd01',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  transition: 0.5s;
+}
+
+.second-page__form--free-delivery {
+
+  display: block;
+  width: 275px;
+  margin: auto;
+
+/*border-radius: 10px;*/
+  /*-moz-border-radius: 10px;*/
+  /*-webkit-border-radius: 10px;*/
+  padding: 20px 10px;
+
+  background: #56274d;
+}
+
+.pay-link:hover {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+       -ms-transform: scale(1.1);
+       transform: scale(1.1);
+}
+
+.second-page__main .tape-text {
+  position: relative;
+
+  display: block;
+  width: 260px;
+  margin: 20px auto;
+  padding: 6px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+/*background: #fff;*/
+
+  background: url("//dadbab.info/content/second/Diet_Stars_IT/imagesSec/bg_shipment.png") no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+.second-page__main .tape-text:before {
+  position: absolute;
+  top: 0;
+  left: -15px;
+
+/*content: "";*/
+
+  display: block;
+
+/*background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/tape_before.jpg) no-repeat center;*/
+  width: 0;
+  height: 0;
+
+  border-top: 16px solid transparent;
+  border-right: 16px solid #ffffff;
+  border-bottom: 16px solid transparent;
+}
+
+.second-page__main .tape-text:after {
+  position: absolute;
+  top: 0;
+  right: -15px;
+
+/*content: "";*/
+
+  display: block;
+
+/*background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/tape_before.jpg) no-repeat center;*/
+  width: 0;
+  height: 0;
+
+  border-top: 16px solid transparent;
+  border-right: 16px solid #ffffff;
+  border-bottom: 16px solid transparent;
+  -webkit-transform: scale(-1, 1);
+     -moz-transform: scale(-1, 1);
+       -o-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+
+  -ms-filter: "FlipH";
+}
+
+.tape-text span {
+  color: #f11d79;
+}
+
+.cards-list {
+  font-size: 0;
+  text-align: center;
+}
+
+.cards-list li {
+  display: inline-block;
+  margin-right: 10px;
+
+  vertical-align: top;
+}
+
+.cards-list li:last-child {
+  margin-right: 0;
+}
+
+.h-w-guarantee {
+  margin-top: 40px;
+}
+
+.h-w-guarantee h3 {
+  /*border-radius: 10px 10px 0 0;*/
+  /*-moz-border-radius: 10px 10px 0 0;*/
+  /*-webkit-border-radius: 10px 10px 0 0;*/
+  padding: 25px 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #ffd004;
+}
+
+.guarantee-list {
+  /*border-radius: 0 0 10px 10px;*/
+  /*-moz-border-radius: 0 0 10px 10px;*/
+  /*-webkit-border-radius: 0 0 10px 10px;*/
+  padding: 25px 20px;
+
+  text-align: left;
+  border: 2px solid #ffd004;
+
+  background: #ffffff;
+}
+
+.guarantee-list li {
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-left: 30px;
+
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.guarantee-list li:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  display: block;
+  width: 24px;
+  height: 27px;
+
+  background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/check.png) no-repeat center;
+}
+
+.guarantee-list li:last-child {
+  margin-bottom: 0;
+}
+
+.guarantee-list li b {
+  font-size: 18px;
+}
+
+.second-page__main-left--bottom-text {
+  display: block;
+  margin: auto;
+  padding: 90px 170px 25px;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.second-page__main-left--bottom-text span {
+  display: block;
+
+  text-transform: uppercase;
+}
+
+.stamp-list__bottom {
+  padding-top: 25px;
+  padding-bottom: 60px;
+
+  font-size: 0;
+  text-align: center;
+}
+
+.stamp-list__bottom img {
+  display: inline-block;
+  margin-right: 25px;
+
+  vertical-align: top;
+}
+
+.stamp-list__bottom img:last-child {
+  margin-right: 0;
+}
+
+.mobile-confirmation,
+.second-page__form--mobile-pay {
+  display: none;
+}
+
+.hidden-window__item-img {
+  position: relative;
+
+  width: 230px;
+  height: 215px;
+  margin: 0 auto;
+}
+
+.hidden-window .bx-bx > li[data-value="7"] .hidden-window__item-img .h-w-item-prod {
+  margin-top: 20px;
+}
+
+.bx-bx > li[data-value] .h-w-item-prod:before {
+  width: 90px;
+  height: 180px;
+  margin: -90px 0 0 -45px;
+}
+
+/* .hidden-window .bx-bx > li[data-value] .h-w-item-prod:before,
+.hidden-window .bx-bx > li[data-value="3"] .h-w-item-prod:after,
+.hidden-window .bx-bx > li[data-value="5"] .h-w-item-prod:after,
+.hidden-window .bx-bx > li[data-value="7"] .h-w-item-prod:after,
+.hidden-window .bx-bx > li[data-value] .h-w-item-img > span:before,
+.hidden-window .bx-bx > li[data-value="5"] .h-w-item-prod > span,
+.hidden-window .bx-bx > li[data-value="7"] .h-w-item-prod > span,
+.hidden-window .bx-bx > li[data-value="5"] .h-w-item-img > span:after,
+.hidden-window .bx-bx > li[data-value="7"] .h-w-item-img > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+
+  display: block;
+  width: 120px;
+  height: 165px;
+  margin: -90px 0 0 -80px;
+
+  background-image: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/pack_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+} */
+
+.hidden-window[class*=" v1_"] .bx-bx > li[data-value="3"] .h-w-item-prod:before {
+  left: 45%;
+}
+
+.hidden-window[class*=" v1_"] .bx-bx > li[data-value="3"] .h-w-item-prod:after,
+.hidden-window[class*=" v1_"] .bx-bx > li[data-value="5"] .h-w-item-prod:after {
+  left: 3%;
+
+  width: 75px;
+  height: 150px;
+  margin: -75px 0 0 0;
+}
+
+.hidden-window .bx-bx > li[data-value="3"] .h-w-item-prod:after,
+.hidden-window .bx-bx > li[data-value="5"] .h-w-item-prod:after {
+  left: 0;
+  z-index: 2;
+
+  width: 120px;
+  height: 120px;
+  margin: -70px 0 0 10px;
+}
+
+.hidden-window[class*=" v1_"] .bx-bx > li[data-value="5"] .h-w-item-prod:before {
+  left: 50%;
+}
+
+/* .hidden-window .bx-bx > li[data-value]:not([data-value="1"]) .h-w-item-prod:before {
+  width: 150px;
+  height: 150px;
+}
+ */
+/* .hidden-window .bx-bx > li[data-value="5"] .h-w-item-prod:before {
+  left: 0;
+
+  width: 150px;
+  height: 150px;
+  margin: -85px 0 0 -15px;
+} */
+
+.hidden-window .bx-bx > li[data-value="7"] .h-w-item-prod:before {
+  height: 140px;
+  margin: -90px 0 0 -83px;
+}
+
+.hidden-window[class*=" v1_"] .bx-bx > li[data-value="5"] .h-w-item-prod:after {
+  left: 13%;
+}
+
+.hidden-window .bx-bx > li[data-value="5"] .h-w-item-prod:after {
+  left: 45%;
+
+  width: 150px;
+  height: 150px;
+  margin: -85px 0 0 -55px;
+}
+
+.hidden-window[class*=" v1_"] .bx-bx > li[data-value="5"] .h-w-item-prod > span {
+  left: 0;
+
+  width: 60px;
+  height: 120px;
+  margin: -60px 0 0 0;
+}
+
+.hidden-window[class*=" v1_"] .bx-bx > li[data-value="7"] .h-w-item-prod:before {
+  width: 150px;
+  height: 150px;
+  margin: -85px 0 0 -75px;
+}
+
+.hidden-window .bx-bx > li[data-value="7"] .h-w-item-prod span {
+  z-index: 1;
+
+  height: 135px;
+  margin: -90px 0 0 -125px;
+  ;
+}
+
+.hidden-window .bx-bx > li[data-value="7"] .hidden-window__item-img span:nth-child(2) {
+  height: 135px;
+  margin: -90px 0 0 -38px;
+}
+
+.hidden-window .bx-bx > li[data-value="7"] .h-w-item-prod:after {
+  height: 150px;
+  margin: -95px 0 0 -100px;
+}
+
+.hidden-window .bx-bx > li[data-value="3"] .h-w-item-prod:before {
+  height: 140px!important;
+  margin: -60px 0 0 -90px;
+}
+
+.hidden-window .bx-bx > li[data-value="3"] .h-w-item-prod:after {
+  z-index: 100;
+
+  height: 155px;
+  margin: -70px 0 0 10px;
+}
+
+.hidden-window .bx-bx > li[data-value="1"] .h-w-item-prod:before {
+  width: 145px;
+  height: 200px;
+  margin: -100px 0 0 -75px;
+
+  background-image: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/pack_1.png);
+  background-size: 140px;
+}
+
+.hidden-window .mobile-balance {
+  display: none;
+}
+
+.hidden-window .mobile-balance span {
+  font-weight: 700;
+  font-size: 36px;
+  color: #97be00;
+}
+
+.hidden-window__item-img .h-w-item-prod img {
+  margin-right: auto;
+  display:  block;
+  position: relative;
+  left: 20px;
+  top: 30px;
+}
+
+.slider-list li[data-value="1"] .hidden-window__item-img .h-w-item-prod img {
+  left: 19px;
+  top: 27px;
+}
+.slider-list li[data-value="7"] .hidden-window__item-img .h-w-item-prod img {
+  left: 15px;
+  top: -20px;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .hidden-window__item-img .h-w-item-prod img {
+    width: 90px;
+    margin-top: 0px;
+  }
+
+  .hidden-window .bx-bx > li[data-value="1"] .h-w-item-prod img {
+    margin-top: -26px;
+    margin-left: 4px;
+    width: 106px;
+  }
+  .slider-list li[data-value="7"] .present-block__images:before {
+    left: -7px;
+    top: 14px;
+  }
+
+  .hidden-window .bx-bx > li .h-w-item-prod span,
+  .hidden-window .bx-bx > li .h-w-item-prod:before,
+  .hidden-window .bx-bx > li .h-w-item-prod:after {
+    height: 100px;
+  }.present-block {
+    top: 65px;
+  }
+  .inner-block__description-result {
+    margin-left: 0;
+  }
+  .top_unit {
+    left: -42px;
+    width: 120px;
+    top: -70px;
+  }
+  .second-page__header .stamp-list {
+    display: none;
+  }
+  .hidden-window .h-w-vis-mob,
+  .hidden-window .h-w-main .h-w-contant {
+    display: block;
+  }
+  .second-page__main-right {
+    width: 100%;
+  }
+  .second-page__main-left {
+    width: 100%;
+    margin-right: 0;
+  }
+  .second-page__main-right--leaves {
+    display: none;
+  }
+  .second-page__wrapper:before {
+    top: 60px;
+    left: 75px;
+
+    width: 115px;
+    height: 75px;
+
+    background-size: 100px;
+  }
+  .hidden-window__item {
+    width: 100%;
+  }
+  .inner-block__description {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    padding: 0 10px;
+  }
+  .inner-block-wrapper .h-w-check {
+    display: none!important;
+  }
+  .inner-block__description-price:after {
+    display: none;
+  }
+  .inner-block__description-price:before {
+    display: none;
+  }
+  .second-page__header-inner {
+    padding-right: 20px;
+
+    background-size: contain;
+  }
+  .second-page__header .logo {
+    width: 100%;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 40px;
+  }
+  .second-page__header .logo:before {
+    top: 3px;
+    right: 0;
+    left: -108px;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+  }
+  .second-page__header .second-page__container:after {
+    top: -68px;
+    left: -32px;
+
+    background-size: 135px;
+  }
+  .second-page__header {
+    display: block;
+    max-width: 320px;
+    margin: auto;
+    margin-top:  30px;
+    margin-bottom: 30px;
+  }
+  .inner-block__description-title {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .inner-block__description-tagline {
+    float: right;
+    width: 155px;
+
+    text-align: left;
+  }
+  .inner-block__description-result {
+    float: right;
+    width: 140px;
+    padding: 3px 10px 3px 8px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  .hidden-window__item {
+    position: absolute;
+    z-index: 1;
+  }
+  .hidden-window__item__product-wrapper img.one_package:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 15px;
+
+    height: 135px;
+    margin-left: 0;
+  }
+  .hidden-window__item-balance {
+    position: absolute;
+    bottom: -289px;
+    left: 15px;
+
+    display: none;
+  }
+  .hidden-window .bx-bx > li[data-value="1"] .hidden-window__item-balance {
+    bottom: -325px;
+  }
+  .hidden-window .bx-bx > li[data-value="5"] .hidden-window__item-balance {
+    bottom: -375px;
+  }
+  .hidden-window .bx-bx > li[data-value="7"] .hidden-window__item-balance {
+    bottom: -355px;
+  }
+
+  .hidden-window__item-balance span {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .inner-block__description-text {
+    position: relative;
+
+    margin-top: 15px;
+    padding-bottom: 20px;
+  }
+  .inner-block__description-text:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+
+    background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/dash.png) no-repeat center;
+  }
+  .second-page__main-left .inner-block {
+    padding-bottom: 0;
+  }
+  .inner-block__description-price {
+    float: right;
+  }
+  .second-page__container {
+    max-width: 320px;
+  }
+  .mobile-confirmation {
+    display: block;
+    margin-bottom: -20px;
+  }
+  .mobile-confirmation__button {
+    position: relative;
+
+    display: block;
+    display: block;
+
+/*border-radius: 5px;*/
+    /*-moz-border-radius: 5px;*/
+    /*-webkit-border-radius: 5px;*/
+    width: 240px;
+    margin: auto;
+    padding: 10px;
+    padding-left: 15px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #959595;
+
+    background: #ebebeb;
+    border: none;
+  }
+  /*    .mobile-confirmation__text:before {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/check2.png) no-repeat center;
+        left: -2px;
+        top: -2px;
+        width: 23px;
+        height: 24px;
+    }*/
+  .inner-block-wrapper,
+  .second-page__main-left .inner-block {
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+  }
+  .second-page__main-left .inner-block {
+    position: relative;
+
+    padding-top: 25px;
+  }
+  .inner-block__description-price--new span.price-text {
+    display: none;
+  }
+  .hidden-window__item-sale {
+    top: -15px;
+    left: -5px;
+
+    width: 120px;
+    padding-right: 10px;
+  }
+  .hidden-window__item__best {
+    top: -70px;
+  }
+  .second-page__main-left .bx-bx > li.active {
+    transform: none;
+  }
+  .hidden-window__item__best p {
+    margin: 5px 0;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .second-page__form {
+    margin-top: 35px;
+    padding-bottom: 0;
+
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+  }
+  .second-page__form--pay-delivery,
+  .transition-text,
+  .second-page__form--free-delivery {
+    display: none;
+  }
+  .second-page__form--mobile-pay {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+    font-size: 0;
+    margin-top: 12px;
+    background: #ffd004;
+    border-top: 1px solid #ffffff;
+  }
+  .second-page__form--mobile-pay__wrap {
+    font-size: 0;
+    text-align: center;
+  }
+  .second-page__form--mobile-pay h3 {
+    margin-bottom: 10px;
+
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: inherit;
+  }
+  .second-page__form--mobile-pay .pay-delivery,
+  .second-page__form--mobile-pay .free-delivery {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    background: transparent;
+    padding-top: 0;
+  }
+  .mobile-pay__button {
+    display: block;
+    width: 135px;
+    margin: auto;
+    padding: 15px 10px;
+
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    background: #ecffa5;
+    box-shadow: 0px 1px 1px #000;
+    border: none;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffed8b', endColorstr='#dbbe21',GradientType=0 );
+  }
+  .delivery-price span {
+    display: block;
+  }
+  .second-page__main .delivery-price {
+    font-size: 16px;
+  }
+  .mobile-pay__link {
+    display: block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 130px;
+    margin: auto;
+    padding: 13px 10px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+
+    border: none;
+    box-shadow: 0 4px 2px #566d01;
+    text-shadow: -0.5px -0.5px 0px #2d3803;
+    line-height: 22px;
+    text-align: center;
+    color: #647d02;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgb(185,220,52);
+    background: -moz-linear-gradient(-76deg, rgba(185,220,52,1) 48%, rgba(163,205,1,1) 53%);
+    background: -webkit-linear-gradient(-76deg, rgba(185,220,52,1) 48%,rgba(163,205,1,1) 53%);
+    background: linear-gradient(167deg, rgba(185,220,52,1) 48%,rgba(163,205,1,1) 53%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9dc34', endColorstr='#a3cd01',GradientType=1 );
+  }
+  .second-page__form--mobile-pay p {
+    margin: 0;
+    margin-top: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .second-page__main .tape-text__mobile {
+    position: relative;
+    display: block;
+    width: 120px;
+    margin: auto;
+    margin-top: 2px;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #d60832;
+    text-transform: uppercase;
+    background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/bg_shipment_mob.png) no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+  .second-page__main .tape-text__mobile:before,
+  .second-page__main .tape-text__mobile:after {
+    /*content: "";*/
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: 0;
+    height: 0;
+
+    border-top: 15px solid transparent;
+    border-right: 10px solid #290513;
+    border-bottom: 15px solid transparent;
+  }
+  .second-page__main .tape-text__mobile:before {
+    left: 0;
+
+    -webkit-transform: scale(-1, 1);
+       -moz-transform: scale(-1, 1);
+         -o-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        filter: FlipH;
+
+    -ms-filter: "FlipH";
+  }
+  .hidden-window .slider-list li:nth-child(3) .hidden-window__item-sale {
+    top: -55px;
+  }
+  .h-w-guarantee h3 {
+    padding: 20px 0;
+  }
+  .guarantee-list li {
+    margin-bottom: 15px;
+  }
+  .guarantee-list li:before {
+    top: -2px;
+  }
+  .guarantee-list {
+    padding: 20px 15px;
+  }
+  .second-page__main-left--bottom-text {
+    margin-top: 20px;
+    padding-bottom: 15px;
+  }
+  .stamp-list__bottom img {
+    width: 60px;
+    margin-right: 15px;
+  }
+  .stamp-list__bottom {
+    padding-bottom: 30px;
+  }
+  .second-page__main-left--bottom-text span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .second-page__main-left--bottom-text {
+    padding: 0 10px 10px 10px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .slider-list li:nth-child(3) .inner-block-wrapper .hidden-window__item__product-wrapper {
+    margin-left: -155px;
+  }
+  .hidden-window__item__product-wrapper img:nth-child(3) {
+    left: 5px;
+
+    height: 100px;
+  }
+  .present-block__images img {
+    max-height: 45px;
+    margin-top:  19px;
+    margin-left: 0px;
+  }
+  .present-block__images img:nth-child(2) {
+    height: 45px;
+    margin-bottom: 0;
+    margin-left: -9px;
+  }
+  .slider-list li:nth-child(3) .hidden-window__item-img .present-block {
+    top: 85px;
+    left: 60px;
+  }
+  .hidden-window__item__product-wrapper img:nth-child(1) {
+    position: absolute;
+    left: 0;
+
+    height: 115px;
+  }
+  .hidden-window__item__product-wrapper img:nth-child(2) {
+    height: 100px;
+    margin-left: 0;
+  }
+  .present-block__text {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    z-index: 20;
+    width: 75px;
+    padding: 3px 2px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .second-page__wrapper {
+    background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/pattern-mob.png) repeat, #f21d7a;
+    z-index: 0;
+  }
+  .slider-list li:nth-of-type(4) .hidden-window__item-img .h-w-item-prod img {
+    width: 90px;
+    margin-top: 0px;
+    top: -15px;
+  }
+  .slider-list li:nth-child(3) .present-block__images img {
+    margin-left: 0px;
+    height: 42px;
+  }
+  .slider-list li:nth-child(3) .present-block__text {
+    bottom: -20px;
+    left: -11px;
+  }
+  .slider-list li:nth-child(2) .inner-block-wrapper .hidden-window__item__product-wrapper {
+    margin-top: 0;
+    margin-right: 175px;
+  }
+  .slider-list li:nth-child(2) .hidden-window__item-img .present-block {
+    right: 190px;
+  }
+  .slider-list li:nth-child(2) .present-block__images:before {
+    left: -25px;
+  }
+  .hidden-window__item__product-wrapper img:nth-child(4) {
+    right: 175px;
+    z-index: 10;
+
+    height: 100px;
+  }
+  .slider-list li:nth-child(4) .inner-block-wrapper .hidden-window__item__product-wrapper {
+    margin-left: -165px;
+  }
+  .slider-list li:nth-child(4) .hidden-window__item__product-wrapper img:nth-child(3) {
+    left: 33px;
+  }
+  .slider-list li:nth-child(4) .hidden-window__item-img .present-block {
+    top: 0px;
+    left: 60px;
+  }
+  .present-block__images img:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+
+    height: 45px;
+  }
+  .hidden-window__item-img {
+    margin-right: 40px;
+  }
+  .hidden-window .slider-list li:nth-child(3) .inner-block {
+    padding-top: 65px;
+  }
+  .hidden-window .slider-list li:nth-child(3) .inner-block__description-title {
+    float: none;
+    width: auto;
+    margin-top: 25px;
+
+    text-align: center;
+  }
+  .slider-list li.last-item .present-block__images img:nth-child(3) {
+    top: 15px;
+    left: -11px;
+  }
+  .hidden-window .bx-pager {
+    display: block;
+    margin: 30px 0 -10px;
+
+    text-align: center;
+
+    counter-reset: h-w-bx -1;
+  }
+
+  .hidden-window .bx-pager .bx-pager-item {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .hidden-window .bx-pager .bx-pager-link {
+    display: block;
+    width: 45px;
+    height: 45px;
+
+    color: #ffffff;
+
+/*-webkit-border-radius: 50%;*/
+    /*-moz-border-radius: 50%;*/
+    /*border-radius: 50%;*/
+    text-decoration: none;
+
+    background: transparent;
+    border: 2px solid #06c3ea;
+  }
+
+  .hidden-window .bx-pager .bx-pager-link:before {
+    content: "1";
+
+    display: block;
+    padding: 5px 0;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .hidden-window .bx-pager .bx-pager-item:nth-child(2) .bx-pager-link:before {
+    content: "2+1";
+  }
+
+  .hidden-window .bx-pager .bx-pager-item:nth-child(3) .bx-pager-link:before {
+    content: "3+2";
+  }
+
+  .hidden-window .bx-pager .bx-pager-item:nth-child(4) .bx-pager-link:before {
+    content: "4+3";
+  }
+
+  .hidden-window .bx-pager .bx-pager-link.active {
+    color: #ffffff;
+
+    background: #06c3ea;
+  }
+  .free-delivery {
+    display: none;
+  }
+  .second-page__header-wrapper:after {
+    display: none;
+  }
+  .slider-list li:nth-child(4) .hidden-window__item__product-wrapper img:nth-child(2) {
+    margin-left: 65px;
+  }
+  /*    .second-page__main-left .bx-bx>li.active .mobile-confirmation {
+        background: #7da00a;
+        color: #fff;
+    }*/
+  .second-page__main-left .bx-bx > li.active .mobile-confirmation__text:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    display: block;
+    width: 23px;
+    height: 24px;
+
+    background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/check2.png) no-repeat center;
+  }
+  .hidden-window__item-img {
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    width: 230px;
+    height: 215px;
+    margin: 0 auto;
+  }
+  .hidden-window .bx-bx > li[data-value="3"] .hidden-window__item-img {
+    top: 28px;
+  }
+  .present-block__images:before {
+    left: -27px;
+    width: 50px;
+    height: 50px;
+  }
+  .hidden-window .bx-bx > li[data-value="1"] .h-w-item-prod:before {
+    width: 100px;
+    margin: -112px 0 0 -100px;
+
+    background-size: contain;
+  }
+  .hidden-window .bx-bx > li[data-value="3"] .h-w-item-prod:before {
+    height: 115px!important;
+    margin: -70px 0 0 -105px;
+  }
+  .hidden-window .bx-bx > li[data-value="3"] .h-w-item-prod:after {
+    height: 135px;
+    margin: -80px 0 0 -10px;
+  }
+  .second-page__wrapper:after {
+    display: none;
+  }
+  .hidden-window .bx-bx > li[data-value="5"] .h-w-item-prod:after {
+    left: 45%;
+
+    width: 150px;
+    height: 125px;
+    margin: -72px 0 0 -80px;
+  }
+  .hidden-window .bx-bx > li[data-value="5"] .h-w-item-prod span {
+    top: 44%;
+
+    width: 200px;
+    height: 140px;
+    margin: -65px 0 0 -147px;
+  }
+  .hidden-window .bx-bx > li[data-value="5"] .h-w-item-prod:before {
+    width: 150px;
+    height: 125px;
+    margin: -72px 0 0 -40px;
+  }
+  .hidden-window .bx-bx > li[data-value="7"] .h-w-item-prod:before {
+    width: 120px!important;
+    height: 120px!important;
+    margin: -75px 0 0 -80px!important;
+  }
+  .hidden-window .bx-bx > li[data-value="7"] .h-w-item-prod span {
+    z-index: 1;
+
+    height: 120px;
+    margin: -75px 0 0 -140px;
+  }
+  .hidden-window .bx-bx > li[data-value="7"] .hidden-window__item-img span:nth-child(2) {
+    height: 120px;
+    margin: -75px 0 0 -125px;
+  }
+  .hidden-window .bx-bx > li[data-value="7"] .h-w-item-prod:after {
+    height: 120px;
+    margin: -75px 0 0 -105px;
+  }
+  .slider-list li.last-item .hidden-window__item-img .present-block {
+    top: 20px;
+    left: 65px;
+  }
+  .slider-list li:nth-child(4) .present-block__images:before {
+    top: 16px;
+    left: -16px;
+    margin: auto;
+  }
+  .hidden-window .bx-bx > li[data-value="5"] .hidden-window__item-img {
+    top: 102px;
+  }
+  .hidden-window .bx-bx > li[data-value="7"] .hidden-window__item-img {
+    top: 60px;
+  }
+  .slider-list li:nth-child(5) .hidden-window__item-img .h-w-item-prod img {
+    width: 90px;
+    margin-top: 0px;
+    top: -23px;
+  }
+  .slider-list li:nth-child(5) .present-block__images:before {
+    left: -7px;
+    width: 50px;
+    height: 50px;
+    top: 19px;
+  }
+  .slider-list li:nth-child(3) .hidden-window__item-img .present-block {
+        left: 50px;
+    top: 57px;
+  }
+  .slider-list li:nth-child(4) .present-block__text {
+    left: -15px;
+  }
+  .slider-list li.last-item .present-block__text {
+    /* top: 60px; */
+  }
+  .inner-block__description-result {
+    margin-left: 0;
+  }
+
+  .hidden-window .bx-bx > li[data-value="3"] .inner-block__description-result,
+  .hidden-window .bx-bx > li[data-value="5"] .inner-block__description-result,
+  .hidden-window .bx-bx > li[data-value="7"] .inner-block__description-result {
+    margin-left: 0;
+  }
+  .slider-list li:nth-child(3) .present-block__images:before {
+    top: 15px;
+    left: -15px;
+  }
+  .second-page__main-left .bx-bx > li.active .inner-block-wrapper {
+    width: auto;
+  }
+  .hidden-window .mobile-balance {
+    display: block;
+    float: left;
+    padding-left: 20px;
+
+    font-size: 20px;
+  }
+}
+
+.mobile-confirmation__button.active {
+  position: relative;
+
+  padding: 10px 0;
+  padding-left: 20px;
+
+  color: #ffffff;
+
+  background: #ffd004;
+  outline: none;
+}
+
+
+.mobile-confirmation__button.active:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 4px;
+
+  display: block;
+  width: 23px;
+  height: 24px;
+
+  background: url(//dadbab.info/content/second/Diet_Stars_IT/imagesSec/check2.png) no-repeat center;
+}
+
+
+
+/* Заменяем этими стилями старые */
+.second-page__form .custom-field,
+.second-page__form .inp {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 275px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-left: 15px;
+
+  font-size: 15px;
+  color: #899099;
+
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  outline: none!important;
+}
+
+/*.second-page__main input[name="postal_code"] {
+  margin-right: 10px;
+}
+
+.second-page__main input[name="postal_code"] {
+  width: 85px;
+  margin-right: 10px;
+}
+
+.second-page__main input[name="street"] {
+  width: 180px;
+}
+
+.second-page__main input[name="house"],
+.second-page__main input[name="floor"],
+.second-page__main input[name="housing"],
+.second-page__main input[name="apartment"] {
+  width: 132px;
+}
+
+.second-page__main input[name="floor"],
+.second-page__main input[name="house"] {
+  margin-right: 10px;
+}*/
+
+.second-page__form .textarea-field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 275px;
+  min-height: 120px;
+  padding-top: 15px;
+  padding-left: 15px;
+
+  font-size: 15px;
+
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  /*margin-bottom: 10px;*/
+}
