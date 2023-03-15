@@ -79,8 +79,8 @@
                     </div>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item"><a class="menu__list-item-link to_title" href=""> Home </a></li>
-                            <li class="menu__list-item"><a class="menu__list-item-link to_form" href=""> Compra Adesso
+                            <li class="menu__list-item"><a class="menu__list-item-link to_title" href="https://wwz3m.bemobtrcks.com/click/1?ns=c%3De30b2084-6c4b-4d62-bd5d-d1c2196b9a8a..l%3D3ac22fe9-ff6c-46ff-a00b-94162e804f0c..a%3D0..b%3D0"> Home </a></li>
+                            <li class="menu__list-item"><a class="menu__list-item-link to_form" href="https://wwz3m.bemobtrcks.com/click/1?ns=c%3De30b2084-6c4b-4d62-bd5d-d1c2196b9a8a..l%3D3ac22fe9-ff6c-46ff-a00b-94162e804f0c..a%3D0..b%3D0"> Compra Adesso
                                 </a></li>
                             <li class="menu__list-item"><a class="menu__list-item-link to_comments" href=""> Commenti
                                 </a></li>
@@ -190,7 +190,7 @@
                                 </div>
 
 
-                                <input type="submit" value="ORDINA SUBITO" class="orderbtn form__button js_pre_toform">
+                                <input onClick="window.location.href ='https://wwz3m.bemobtrcks.com/click/1?ns=c%3De30b2084-6c4b-4d62-bd5d-d1c2196b9a8a..l%3D3ac22fe9-ff6c-46ff-a00b-94162e804f0c..a%3D0..b%3D0'" value="ORDINA SUBITO" class="orderbtn form__button js_pre_toform">
                                 <div class="toform"></div>
 
                                 <p class="form__text"> Questo ti cambierà davvero la vita! </p>
@@ -729,17 +729,30 @@
                         }
                     </style>
 
-                    <div class="ac_footer">Global Partners LTD, <br> <a href="#" target="_blank">Privacy Policy</a><br>
-                        *The product advertised is a dietary supplement. Dietary supplements are products intended to supplement the diet. They are not medicines and are not intended to treat, diagnose, mitigate, prevent, or cure diseases.
+                    <div class="ac_footer" style="height: auto; margin-bottom: 30px;">Global Partners LTD, <br> <a href="#" target="_blank">Privacy Policy</a><br>
+                        <p style="font-size: 14px; ">*The product advertised is a dietary supplement. Dietary supplements are products intended to supplement the diet. They are not medicines and are not intended to treat, diagnose, mitigate, prevent, or cure diseases.
 For fictional characters:
-*This Advertorial is based on fiction and any similarity to real people, places, or events are purely coincidental.
+*This Advertorial is based on fiction and any similarity to real people, places, or events are purely coincidental.</p>
                         
-                    </div><br><br>
+                    </div>
 
 
 
 
-                    <script>$("form").attr("action", "send.php"); $("form").attr("method", "post");</script>
+                    <script type="text/javascript">
+                        function bemobCb(params) {
+                            var t = params.trackingDomain+'/click/';
+                            var re = new RegExp(t+'?(\\d*)');
+                            var e = document.querySelectorAll('a[href*="'+t+'"]');
+                            for (var i = 0; i < e.length; i++) {
+                                var ex = re.exec(e[i].href);
+                                if (ex) {
+                                    e[i].href = params.ctaSecureUrl.replace('%%OFFER_NUMBER%%', ex[1] || 1);
+                                }
+                            }
+                        }
+                        </script>
+                        <script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://wwz3m.bemobtrcks.com/landing/e30b2084-6c4b-4d62-bd5d-d1c2196b9a8a?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script><noscript><img src="https://wwz3m.bemobtrcks.com/landing/e30b2084-6c4b-4d62-bd5d-d1c2196b9a8a?rule=1&path=1&landing=1" alt=""></noscript>
                     <footer>
                         <center>
                             <span style="text-decoration: underline; cursor: pointer;"
